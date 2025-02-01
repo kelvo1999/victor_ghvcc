@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hofny E-shop</title>
+    <!-- Main Templet CSS File  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" class="js-color-style" href="css/colors/color-2.css" />
+    <!-- Render All Elements Normally  -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-box nav-logo-icon"></i>
+                <p> E-shop</p>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-items" id="nav-items">
+                    <li class="item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="item"><a class="nav-link active-link" href="shop.html">Shop</a></li>
+                    <li class="item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="item"><a class="nav-link" href="blog.html">Faq's</a></li>
+                    <li class="item"><a class="nav-link" href="blog.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-btns">
+                <div class="login-toggle" id="login-toggle">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="cart-shop" id="cart-shop">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i id="icon-toggel" class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- #################### CART #################### -->
+    <div class="cart" id="cart">
+        <i class="fas fa-times cart-close" id="cart-close"></i>
+        <h2 class="cart-title">My Cart</h2>
+        <div class="cart-container">
+            <article class="cart-card">
+                <div class="cart-box">
+                    <img class="cart-img" src="imgs/h.png" alt="">
+                </div>
+                <div class="cart-details">
+                    <h3 class="cart-title-center">Cardigan Hoodie</h3>
+                    <span class="cart-price">$15</span>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-trash cart-amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart-card">
+                <div class="cart-box">
+                    <img class="cart-img" src="imgs/Jacket2.png" alt="">
+                </div>
+                <div class="cart-details">
+                    <h3 class="cart-title-center">Windbreak Hoodie</h3>
+                    <span class="cart-price">$15</span>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-trash cart-amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart-card">
+                <div class="cart-box">
+                    <img class="cart-img" src="imgs/short.png" alt="">
+                </div>
+                <div class="cart-details">
+                    <h3 class="cart-title-center">Short Jeans</h3>
+                    <span class="cart-price">$11</span>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-trash cart-amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart-prices">
+            <div class="cart-prices-item">3 Items</div>
+            <span class="cart-prices-total">$41</span>
+        </div>
+    </div>
+
+
+    <!-- ################## END CART ################## -->
+
+    <!-- ################# START LOGIN ################ -->
+
+    <div class="login" id="login">
+        <i class="fas fa-times login-close" id="login-close"></i>
+        <h2 class="login-title">LOGIN</h2>
+        <form action="" class="login-form grid">
+            <!-- EMAIL -->
+            <div class="login-content">
+                <label class="login-label" for="">Email</label>
+                <input type="email" class="login-input" id="e-mail">
+            </div>
+            <!-- PASSWORD -->
+            <div class="login-content">
+                <label class="login-label" for="">Password</label>
+                <input type="password" class="login-input" id="pass">
+            </div>
+            <!-- BUTTON -->
+            <div>
+                <a class="login-btn button" href="">Sign In</a>
+            </div>
+            <div>
+                <p class="signup">Not a member?
+                    <a href="regisration.html">SignUp</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- ################## END LOGIN ################# -->
+
+
+
+
+    <!-- ################## Start Shop ################# -->
+    <div class="main">
+        <section class="shop section container">
+            <h2 class="bearcrumb-title">Shop Page</h2>
+            <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Shop</span> </h3>
+            <div class="shop-container grid">
+                <div class="sidebar">
+                    <h3 class="filter-title">Select Filter</h3>
+                    <!-- 1 -->
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Condation</h3>
+
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>New</p><span>(13)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>sale</p><span>(13)</span>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Size</h3>
+
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>S</p><span>(13)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>M</p><span>(5)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>L</p><span>(8)</span>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Catigoraies</h3>
+
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Mens</p><span>(13)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Women</p><span>(9)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Kids</p><span>(7)</span>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Style</h3>
+
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Casual</p><span>(11)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Dressy</p><span>3)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Girly</p><span>(7)</span>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Sub Catigoraies</h3>
+
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Jackets</p><span>(12)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>T-shirts</p><span>(8)</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Accessories</p><span>(3)</span>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                </div>
+                <div class="shop-items grid">
+                    <!-- 1 -->
+                    <div class="shop-content">
+                        <div class="tag">New</div>
+                        <img class="shop-img" src="imgs/Jacket3.png" alt="">
+                        <h3 class="shop-title">Jacket</h3>
+                        <span class="shop-subtitle">Jackets</span>
+                        <div class="shop-prices">
+                            <span class="shop-price">14.99$</span>
+                            <span class="shop-discount">19.99$</span>
+                        </div>
+                        <a class="button shop-button" href="details.html">
+                            <i class="fas fa-shopping-cart shop-icon"></i>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="shop-content">
+                        <div class="tag">New</div>
+                        <img class="shop-img" src="imgs/Jacket4.png" alt="">
+                        <h3 class="shop-title">Adidas Tracksuit</h3>
+                        <span class="shop-subtitle">Tracks</span>
+                        <div class="shop-prices">
+                            <span class="shop-price">29.99$</span>
+                            <span class="shop-discount">39.99$</span>
+                        </div>
+                        <a class="button shop-button" href="details.html">
+                            <i class="fas fa-shopping-cart shop-icon"></i>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="shop-content">
+                        <div class="tag">New</div>
+                        <img class="shop-img" src="imgs/Jacket2.png" alt="">
+                        <h3 class="shop-title">Windbreaker Jacket</h3>
+                        <span class="shop-subtitle">Jackets</span>
+                        <div class="shop-prices">
+                            <span class="shop-price">17.99$</span>
+                            <span class="shop-discount">24.99$</span>
+                        </div>
+                        <a class="button shop-button" href="details.html">
+                            <i class="fas fa-shopping-cart shop-icon"></i>
+                        </a>
+                    </div>
+                    <!-- 4 -->
+                    <div class="shop-content">
+                        <div class="tag">New</div>
+                        <img class="shop-img" src="imgs/Shirt.png" alt="">
+                        <h3 class="shop-title">Awsome T-shirt</h3>
+                        <span class="shop-subtitle">Shirts</span>
+                        <div class="shop-prices">
+                            <span class="shop-price">14.99$</span>
+                            <span class="shop-discount">19.99$</span>
+                        </div>
+                        <a class="button shop-button" href="details.html">
+                            <i class="fas fa-shopping-cart shop-icon"></i>
+                        </a>
+                    </div>
+                    <!--5 -->
+                    <div class="shop-content">
+                        <div class="tag">New</div>
+                        <img class="shop-img" src="imgs/h.png" alt="">
+                        <h3 class="shop-title">Cardigan Hoodie</h3>
+                        <span class="shop-subtitle">Hoodie</span>
+                        <div class="shop-prices">
+                            <span class="shop-price">14.99$</span>
+                            <span class="shop-discount">29.99$</span>
+                        </div>
+                        <a class="button shop-button" href="details.html">
+                            <i class="fas fa-shopping-cart shop-icon"></i>
+                        </a>
+                    </div>
+                    <!-- 6 -->
+                    <div class="shop-content">
+                        <div class="tag">New</div>
+                        <img class="shop-img" src="imgs/Jacket3.png" alt="">
+                        <h3 class="shop-title">Jacket</h3>
+                        <span class="shop-subtitle">Jackets</span>
+                        <div class="shop-prices">
+                            <span class="shop-price">14.99$</span>
+                            <span class="shop-discount">19.99$</span>
+                        </div>
+                        <a class="button shop-button" href="details.html">
+                            <i class="fas fa-shopping-cart shop-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <i class="fas fa-chevron-left"></i>
+
+                <span class="current">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>&middot; &middot;</span>
+                <span>9</span>
+
+                <i class="fas fa-chevron-right"></i>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ################## End Shop ################# -->
+
+
+
+
+
+    <!-- ################## START FOOTER ############ -->
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <!-- FOOTER CONTENT 1 -->
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <i class="fas fa-box footer-logo-icon"></i>
+                    <p> E-shop</p>
+                </a>
+
+                <p class="footer-discription">Enjoy the biggest sale <br> of your life.</p>
+                <div class="footer-social">
+                    <a class="footer-social-link" href="https://www.facebook.com/mahmoudhofnyy"><i class="fab fa-facebook"></i></a>
+                    <a class="footer-social-link" href="https://www.instagram.com/mahmoudhofnyy"><i class="fab fa-instagram"></i></a>
+                    <a class="footer-social-link" href="https://www.twitter.com/mahmoudhofnyy"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer-content">
+                <h3 class="footer-title">About</h3>
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="about.html">About Us</a></li>
+                    <li><a class="footer-link" href="">Customer Support</a></li>
+                    <li><a class="footer-link" href="">Support Center</a></li>
+                </ul>
+            </div>
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer-content">
+                <h3 class="footer-title">Our Services</h3>
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="">Shop</a></li>
+                    <li><a class="footer-link" href="">Discount</a> </li>
+                    <li><a class="footer-link" href="">Shipping Mode</a></li>
+                </ul>
+            </div>
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer-content">
+                <h3 class="footer-title">Our Company</h3>
+
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="">Register</a></li>
+                    <li><a class="footer-link" href="">Contact Us</a></li>
+                    <li><a class="footer-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer-copy">&#169; <span class="main-color">Mahmoud Hofny</span> All Right reserved, form Crypticalcoder </span>
+    </footer>
+    <!-- ################## END FOOTER ############ -->
+
+
+    <!-- ################## SCROLL UP ############ -->
+    <a class="scroll-up" id="scroll-up" href="#"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- ################## START STYLE SWITCHER  ############ -->
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+
+        </div>
+        <h4>Theme Colors</h4>
+
+        <div class="themes-colors js-theme-colors">
+            <button type="button" data-js-themes-color="color-1" class="js-theme-color-item themes-button color-1">
+                    <i class="fas fa-check"></i>
+                </button>
+            <button type="button" data-js-themes-color="color-2" class="js-theme-color-item themes-button color-2">
+                    <i class="fas fa-check"></i>
+                </button>
+            <button type="button" data-js-themes-color="color-3" class="js-theme-color-item themes-button color-3">
+                    <i class="fas fa-check"></i>
+                </button>
+            <button type="button" data-js-themes-color="color-4" class="js-theme-color-item themes-button color-4">
+                    <i class="fas fa-check"></i>
+                </button>
+            <button type="button" data-js-themes-color="color-5" class="js-theme-color-item themes-button color-5">
+                    <i class="fas fa-check"></i>
+                </button>
+        </div>
+    </div>
+
+    <!-- ################## END STYLE SWITCHER  ############ -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
