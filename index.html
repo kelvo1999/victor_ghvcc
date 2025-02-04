@@ -16,16 +16,29 @@
     <!-- font awsome -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="icon" type="image/png" href="imgs/logo.png">
+    <style>
+         :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+        }
+        
+        .dark-mode {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+    </style>
 
 </head>
 
 <body>
-    <!-- <ul>
-        <li>
-            <span>Dark</span>
-            <span>Light</span>
-        </li>
-    </ul> -->
+
+
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">
@@ -45,6 +58,7 @@
                     <li class="item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
+
             <div class="nav-btns">
                 <div class="login-toggle" id="login-toggle">
                     <i class="fas fa-user"></i>
@@ -57,7 +71,9 @@
                 </div>
             </div>
         </nav>
+        <button id="theme-toggle">🌙 Dark Mode</button>
     </header>
+
     <!-- #################### CART #################### -->
     <div class="cart" id="cart">
         <i class="fas fa-times cart-close" id="cart-close"></i>
@@ -496,6 +512,31 @@
     </div>
 
     <!-- ################## END STYLE SWITCHER  ############ -->
+    <script>
+        const toggleButton = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        // Check if user has a preference
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-mode");
+            toggleButton.textContent = "☀️ Light Mode";
+        }
+
+        // Toggle Function
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            // Save User Preference
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+                toggleButton.textContent = "☀️ Light Mode";
+            } else {
+                localStorage.setItem("theme", "light");
+                toggleButton.textContent = "🌙 Dark Mode";
+            }
+        });
+    </script>
+
 
     <script src="js/swiper-bundle.min.js "></script>
     <script src="js/main.js "></script>
