@@ -1887,6 +1887,30 @@
         }
     }
     
+    .gh {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .gh {
+        color: var(--first-color);
+        transition: width 2s, height 2s, transform 2s;
+    }
+    
+    .gh:hover {
+        color: var(--first-color);
+        transform: rotate(360deg);
+    }
+    
+    @media (max-width:576px) {
+        .footer-logo {
+            justify-content: center;
+        }
+        .gh {
+            justify-content: center;
+        }
+    }
+    
     .footer-title {
         margin-bottom: 20px;
         font-size: var(--h3-font);
