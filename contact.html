@@ -15,6 +15,29 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- font awsome -->
     <link rel="stylesheet" href="css/all.min.css">
+    <style>
+         :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+        }
+        
+        .dark-mode {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+        
+        .header {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,6 +55,7 @@
                     <li class="item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="item"><a class="nav-link" href="faq.html">Faq's</a></li>
                     <li class="item"><a class="nav-link active-link" href="contact.html">Contact</a></li>
+                    <button id="theme-toggle" style="background-color: transparent;">Mode </button>
                 </ul>
             </div>
             <div class="nav-btns">
@@ -309,7 +333,7 @@
     </div>
 
     <!-- ################## END STYLE SWITCHER  ############ -->
-
+    <script src="js/dark.js"></script>
     <script src="js/swiper-bundle.min.js "></script>
     <script src="js/main.js "></script>
 </body>

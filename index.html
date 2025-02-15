@@ -32,6 +32,12 @@
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
         }
+        
+        .header {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
     </style>
 
 
@@ -595,30 +601,7 @@
         window.onload = type;
     </script>
 
-    <script>
-        const toggleButton = document.getElementById("theme-toggle");
-        const body = document.body;
-
-        // Check if user has a preference
-        if (localStorage.getItem("theme") === "dark") {
-            body.classList.add("dark-mode");
-            toggleButton.textContent = "Mode ";
-        }
-
-        // Toggle Function
-        toggleButton.addEventListener("click", () => {
-            body.classList.toggle("dark-mode");
-
-            // Save User Preference
-            if (body.classList.contains("dark-mode")) {
-                localStorage.setItem("theme", "dark");
-                toggleButton.textContent = "Mode ";
-            } else {
-                localStorage.setItem("theme", "light");
-                toggleButton.textContent = "Mode";
-            }
-        });
-    </script>
+    <script src="js/dark.js"></script>
 
     <script src="js/swiper-bundle.min.js "></script>
     <script src="js/main.js "></script>
