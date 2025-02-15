@@ -34,6 +34,7 @@
         }
     </style>
 
+
 </head>
 
 <body>
@@ -56,7 +57,9 @@
                     <li class="item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="item"><a class="nav-link" href="faq.html">Faq's</a></li>
                     <li class="item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <button id="theme-toggle" style="background-color: transparent;">Mode </button>
                 </ul>
+
             </div>
 
             <div class="nav-btns">
@@ -71,7 +74,7 @@
                 </div>
             </div>
         </nav>
-        <button id="theme-toggle">🌙 Dark Mode</button>
+        <!-- <button id="theme-toggle">🌙 </button> -->
     </header>
 
     <!-- #################### CART #################### -->
@@ -178,6 +181,7 @@
                 </p>
             </div>
         </form>
+
     </div>
 
     <!-- ################## END LOGIN ################# -->
@@ -432,7 +436,7 @@
 
                 <!-- <p class="footer-discription ">Simplicity & Sustainability.</p> -->
                 <p class="footer-discription " id="demo"></p>
-                <div class="footer-social ">
+                <div class="footer-social " style="visibility:hidden;">
                     <a class="footer-social-link " href="https://www.facebook.com/mahmoudhofnyy "><i class="fab fa-facebook "></i></a>
                     <a class="footer-social-link " href="https://www.instagram.com/mahmoudhofnyy "><i class="fab fa-instagram "></i></a>
                     <a class="footer-social-link " href="https://www.twitter.com/mahmoudhofnyy "><i class="fab fa-twitter "></i></a>
@@ -453,7 +457,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-content ">
+            <div class="footer-content " style="visibility:hidden;">
                 <h3 class="footer-title ">About</h3>
                 <ul class="footer-links ">
                     <li><a class="footer-link " href="about.html ">About Us</a></li>
@@ -557,6 +561,11 @@
             <button type="button " data-js-themes-color="color-5 " class="js-theme-color-item themes-button color-5 ">
                 <i class="fas fa-check "></i>
             </button>
+
+            <!-- <button type="button " data-js-themes-color="color-6 " class="js-theme-color-item themes-button color-6 ">
+                <i class="fas fa-check "></i>
+            </button> -->
+
         </div>
     </div>
 
@@ -585,6 +594,7 @@
 
         window.onload = type;
     </script>
+
     <script>
         const toggleButton = document.getElementById("theme-toggle");
         const body = document.body;
@@ -592,7 +602,7 @@
         // Check if user has a preference
         if (localStorage.getItem("theme") === "dark") {
             body.classList.add("dark-mode");
-            toggleButton.textContent = "☀️ Light Mode";
+            toggleButton.textContent = "Mode ";
         }
 
         // Toggle Function
@@ -602,14 +612,13 @@
             // Save User Preference
             if (body.classList.contains("dark-mode")) {
                 localStorage.setItem("theme", "dark");
-                toggleButton.textContent = "☀️ Light Mode";
+                toggleButton.textContent = "Mode ";
             } else {
                 localStorage.setItem("theme", "light");
-                toggleButton.textContent = "🌙 Dark Mode";
+                toggleButton.textContent = "Mode";
             }
         });
     </script>
-
 
     <script src="js/swiper-bundle.min.js "></script>
     <script src="js/main.js "></script>

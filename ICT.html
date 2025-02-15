@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Accessories Shop</title>
+    <script>
+        function checkItem() {
+            let code = document.getElementById("codeInput").value.toUpperCase();
+            let item;
+
+            if (code === "P001") {
+                item = "Printers";
+            } else if (code === "C001") {
+                item = "Computers";
+            } else if (code === "S001") {
+                item = "Scanners";
+            } else {
+                item = "Any other item";
+            }
+
+            alert("Item: " + item);
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>ICT Accessories Shop</h2>
+    <label for="codeInput">Enter Item Code:</label>
+    <input type="text" id="codeInput" placeholder="e.g., P001">
+    <button onclick="checkItem()">Check Item</button>
+
+</body>
+
+</html>

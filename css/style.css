@@ -1488,6 +1488,9 @@
     .style-switcher .color-5 {
         background-color: hsl(375, 88%, 61%);
     }
+    /* .style-switcher .color-6 {
+        background-color: hsl(15, 81%, 22%);
+    } */
     /* OPEN */
     
     .style-switcher.open {
@@ -1843,7 +1846,7 @@
     }
     
     .footer-content {
-        padding: 20px;
+        padding: 10px;
     }
     
     .footer-logo {
