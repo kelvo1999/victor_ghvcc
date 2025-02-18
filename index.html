@@ -438,6 +438,7 @@
                     <!-- <i class="fas fa-box footer-logo-icon"></i> -->
                     <img src="imgs/logo.png" class="gh" alt=" " style="height: 35px;width: 35px; border-radius: 50%; ">
                     <p> GhViƆɔ </p>
+
                 </a>
 
                 <!-- <p class="footer-discription ">Simplicity & Sustainability.</p> -->
@@ -586,12 +587,12 @@
 
         function type() {
             if (index < text.length) {
-                document.getElementById("demo ").textContent += text.charAt(index);
+                document.getElementById("demo").textContent += text.charAt(index);
                 index++;
                 setTimeout(type, speed);
             } else {
                 setTimeout(() => {
-                    document.getElementById("demo ").textContent = " "; // Clear text
+                    document.getElementById("demo").textContent = " "; // Clear text
                     index = 0; // Reset index
                     type(); // Restart typing
                 }, delayBeforeRestart);
