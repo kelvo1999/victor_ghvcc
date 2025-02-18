@@ -36,6 +36,28 @@
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
         }
+        
+        .mar {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        
+        .mar p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+        
+        @keyframes mar {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
     </style>
 </head>
 
@@ -239,9 +261,12 @@
                     <img src="imgs/logo.png" class="gh" alt="" style="height: 35px;width: 35px; border-radius: 50%;visibility:hidden;">
                     <p style="visibility:hidden;">GhViƆɔ </p>
                 </a>
-                <marquee behavior="" direction="">
+                <div class="mar">
+                    <p>Simplicity & Sustainability </p>
+                </div>
+                <!-- <marquee behavior="" direction="" class="mar">
                     <p class="footer-discription">Simplicity & Sustainability </p>
-                </marquee>
+                </marquee> -->
 
                 <div class="footer-social" style="visibility:hidden;">
                     <a class="footer-social-link" href="https://www.facebook.com/mahmoudhofnyy"><i class="fab fa-facebook"></i></a>
