@@ -36,6 +36,34 @@
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
         }
+        
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+        }
+        
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        
+        .lightbox.show {
+            display: flex;
+        }
     </style>
 </head>
 
@@ -188,14 +216,26 @@
             <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Blog</span> </h3>
             <div class="blog-container grid">
                 <div class="blog-post grid">
-                    <img class="blog-img" src="imgs/blog1.jpg" alt="">
+                    <img class="blog-img" src="img/MSL.jpg" alt="" onclick="openLightbox(this)">
                     <div class="blog-info">
-                        <p class="up-info">Lorem ipsum dolor sit amet consectetur. culpa quasi sapiente? Pariatur ipsam in veritatis labore vero.</p>
-                        <h3 class="info-title">From Now We Are Certified Web..</h3>
-                        <p class="info-discription">By Admin / Jule 12.2022 /</p>
+                        <p class="up-info">We are your number one jersey sponsor in the local teams</p>
+                        <h3 class="info-title">Our First Appearance </h3>
+                        <p class="info-discription">By Admin / February 9 <sup>th</sup>, 2025/</p>
+                        <div class="hidden-content">
+                            <p>
+                                MSL put on a dominant display at <b>Arena One</b> on <b>February 9, 2025</b>, thrashing <b>Maps United 10-5</b> in a thrilling goal fest. <b>Rodgers stole the show with a hat-trick</b>, while <b>Eugene bagged a brace</b>                                to keep the scoreboard ticking. <b>Lawrence, aka Maresca, also found the net</b>, with <b>Arnold, Silvena, and Ronny making their presence felt</b> in MSL’s relentless attack. Between the posts, <b>Victor and Micky shared goalkeeping duties</b>,
+                                facing waves of pressure but standing firm when it mattered. Despite Maps United’s spirited fightback, MSL’s firepower proved too much, sealing a commanding victory in style.
+                            </p>
+                        </div>
 
-                        <div class="more">
+                        <!-- <div class="more">
                             <a class="read-more" href="">
+                                Read More
+                                <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div> -->
+                        <div class="more">
+                            <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
                                 Read More
                                 <i class="fas fa-arrow-right button-icon"></i>
                             </a>
@@ -203,47 +243,96 @@
                     </div>
 
                 </div>
+                <!-- Lightbox Container -->
+                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                    <img id="lightbox-img" class="lightbox-img">
+                </div>
                 <div class="blog-post grid">
-                    <img class="blog-img" src="imgs/blog1.jpg" alt="">
+                    <img class="blog-img" src="img/ghvicc.jpg" alt="" onclick="openLightbox(this)">
                     <div class="blog-info">
-                        <p class="up-info">Lorem ipsum dolor sit amet consectetur. culpa quasi sapiente? Pariatur ipsam in veritatis labore vero.</p>
-                        <h3 class="info-title">From Now We Are Certified Web..</h3>
-                        <p class="info-discription">By Admin / Jule 12.2022 /</p>
+                        <p class="up-info">The Story Behind</p>
+                        <h3 class="info-title">Your Number one Slick Artists</h3>
+                        <p class="info-discription">By Admin / February 9
+                            <sup>th</sup>, 2025 /</p>
+                        <div class="hidden-content">
+                            <p>
+                                GhViƆɔ is the epitome of luxury, blending sophistication with a bold, modern edge. Every detail of the brand exudes class and exclusivity, from its sleek designs to its premium craftsmanship. Whether it's fashion, accessories, or lifestyle essentials,
+                                GhViƆɔ stands as a symbol of elegance, catering to those who appreciate refined aesthetics and high-end quality. With a perfect fusion of contemporary style and timeless appeal, GhViƆɔ is not just a brand—it’s a statement
+                                of prestige and finesse. </p>
+                        </div>
 
                         <div class="more">
-                            <a class="read-more" href="">
-                                Read More
-                                <i class="fas fa-arrow-right button-icon"></i>
-                            </a>
+                            <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
+                                    Read More
+                                    <i class="fas fa-arrow-right button-icon"></i>
+                                </a>
                         </div>
                     </div>
 
                 </div>
-                <div class="blog-post grid">
-                    <img class="blog-img" src="imgs/blog1.jpg" alt="">
+                <!-- Lightbox Container -->
+                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                    <img id="lightbox-img" class="lightbox-img">
+                </div>
+                <!-- <div class="blog-post grid">
+                    <img class="blog-img" src="img/maps.jpg" alt="">
                     <div class="blog-info">
-                        <p class="up-info">Lorem ipsum dolor sit amet consectetur. culpa quasi sapiente? Pariatur ipsam in veritatis labore vero.</p>
-                        <h3 class="info-title">From Now We Are Certified Web..</h3>
-                        <p class="info-discription">By Admin / Jule 12.2022 /</p>
+                        <p class="up-info">More like Friends</p>
+                        <h3 class="info-title">The Rivals</h3>
+
+                        <p class="info-discription">By Admin / February 9
+                            <sup>th</sup>, 2025 /</p>
+                        <div class="hidden-content">
+                            <p>MSL put on a dominant display at Arena One on February 9, 2025, thrashing Maps United 10-5 in a thrilling goal fest. Rodgers stole the show with a hat-trick, while Eugene bagged a brace to keep the scoreboard ticking. Lawrence,
+                                aka Maresca, also found the net, with Arnold, Silvena, and Ronny making their presence felt in MSL’s relentless attack. Victor and Micky held things down between the posts, facing waves of pressure. However, Maps United
+                                showed fighting spirit, with Cyrus, Ken, and Simon finding the back of the net, keeping the game exciting. Despite their efforts, MSL’s firepower proved too much, sealing a commanding victory in style.</p>
+                        </div>
 
                         <div class="more">
-                            <a class="read-more" href="">
+                            <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
+                                        Read More
+                                        <i class="fas fa-arrow-right button-icon"></i>
+                                    </a>
+                        </div>
+                    </div>
+
+                </div> -->
+                <div class="blog-post grid">
+                    <img class="blog-img" src="img/maps.jpg" alt="" onclick="openLightbox(this)">
+
+                    <div class="blog-info">
+                        <p class="up-info">More like Friends</p>
+                        <h3 class="info-title">The Rivals</h3>
+                        <p class="info-description">By Admin / February 9<sup>th</sup>, 2025 /</p>
+
+                        <div class="hidden-content">
+                            <p>MSL put on a dominant display at Arena One on February 9, 2025, thrashing Maps United 10-5 in a thrilling goal fest. Rodgers stole the show with a hat-trick, while Eugene bagged a brace to keep the scoreboard ticking. Lawrence,
+                                aka Maresca, also found the net, with Arnold, Silvena, and Ronny making their presence felt in MSL’s relentless attack. Victor and Micky held things down between the posts, facing waves of pressure. However, Maps United
+                                showed fighting spirit, with Cyrus, Ken, and Simon finding the back of the net, keeping the game exciting. Despite their efforts, MSL’s firepower proved too much, sealing a commanding victory in style.</p>
+                        </div>
+
+                        <div class="more">
+                            <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
                                 Read More
                                 <i class="fas fa-arrow-right button-icon"></i>
                             </a>
                         </div>
                     </div>
+                </div>
 
+                <!-- Lightbox Container -->
+                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                    <img id="lightbox-img" class="lightbox-img">
                 </div>
             </div>
             <div class="pagination">
                 <i class="fas fa-chevron-left"></i>
 
                 <span class="current">1</span>
-                <span>2</span>
+                <!-- <span>2</span>
                 <span>3</span>
                 <span>&middot; &middot;</span>
-                <span>9</span>
+                <span>9</span> -->
 
                 <i class="fas fa-chevron-right"></i>
 
@@ -345,6 +434,34 @@
     </div>
 
     <!-- ################## END STYLE SWITCHER  ############ -->
+    <!-- Read more sricpt -->
+    <script>
+        function toggleReadMore(btn) {
+            let content = btn.closest('.blog-info').querySelector('.hidden-content');
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                btn.innerHTML = "Read Less <i class='fas fa-arrow-up button-icon'></i>";
+            } else {
+                content.style.display = "none";
+                btn.innerHTML = "Read More <i class='fas fa-arrow-right button-icon'></i>";
+            }
+        }
+    </script>
+    <!-- lightbox -->
+    <script>
+        function openLightbox(img) {
+            let lightbox = document.getElementById("lightbox");
+            let lightboxImg = document.getElementById("lightbox-img");
+
+            lightbox.style.display = "flex";
+            lightboxImg.src = img.src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
     <script src="js/dark.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

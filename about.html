@@ -261,9 +261,10 @@
                     <img src="imgs/logo.png" class="gh" alt="" style="height: 35px;width: 35px; border-radius: 50%;visibility:hidden;">
                     <p style="visibility:hidden;">GhViƆɔ </p>
                 </a>
-                <div class="mar">
+                <!-- <div class="mar">
                     <p>Simplicity & Sustainability </p>
-                </div>
+                </div> -->
+                <p class="footer-discription " id="demo"></p>
                 <!-- <marquee behavior="" direction="" class="mar">
                     <p class="footer-discription">Simplicity & Sustainability </p>
                 </marquee> -->
@@ -336,6 +337,29 @@
     </div>
 
     <!-- ################## END STYLE SWITCHER  ############ -->
+    <!-- autotypying script -->
+    <script>
+        const text = "Simplicity & Sustainability. Simplicity & Sustainability. Simplicity & Sustainability. Simplicity & Sustainability. ";
+        let index = 0;
+        const speed = 100; // Typing speed in ms
+        const delayBeforeRestart = 1500; // Wait time before restarting
+
+        function type() {
+            if (index < text.length) {
+                document.getElementById("demo").textContent += text.charAt(index);
+                index++;
+                setTimeout(type, speed);
+            } else {
+                setTimeout(() => {
+                    document.getElementById("demo").textContent = " "; // Clear text
+                    index = 0; // Reset index
+                    type(); // Restart typing
+                }, delayBeforeRestart);
+            }
+        }
+
+        window.onload = type;
+    </script>
     <script src="js/dark.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
