@@ -64,6 +64,29 @@
         .lightbox.show {
             display: flex;
         }
+        /* Default Light Mode Styles */
+        
+        .blog-post.grid {
+            background: #ffffff;
+            /* Light mode background */
+            color: #000000;
+            /* Light mode text color */
+            transition: background 0.3s, color 0.3s;
+        }
+        /* Dark Mode Styles */
+        
+        .dark-mode .blog-post.grid {
+            background: #222222;
+            /* Dark mode background */
+            color: #ffffff;
+            /* Dark mode text color */
+        }
+        /* Ensure links and buttons are visible in dark mode */
+        
+        .dark-mode .read-more {
+            color: #00bcd4;
+            /* Light blue for contrast */
+        }
     </style>
 </head>
 
@@ -82,7 +105,9 @@
                     <li class="item"><a class="nav-link active-link" href="blog.html">Blog</a></li>
                     <li class="item"><a class="nav-link" href="faq.html">Faq's</a></li>
                     <li class="item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <button id="theme-toggle" style="background-color: transparent;">Mode </button>
+                    <li class="item" id="theme-toggle"><a class="nav-link" href="">Mode</a></li>
+                    <!-- <button id="theme-toggle" style="background-color: transparent;">Mode </button> -->
+                    <!-- <button id="theme-toggle" style="background-color: transparent;">Mode </button> -->
                 </ul>
             </div>
             <div class="nav-btns">

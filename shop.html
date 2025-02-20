@@ -42,6 +42,29 @@
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
         }
+        /* Default Light Mode Styles */
+        
+        .shop-content {
+            background: #ffffff;
+            /* Light mode background */
+            color: #000000;
+            /* Light mode text color */
+            transition: background 0.3s, color 0.3s;
+        }
+        /* Dark Mode Styles */
+        
+        .dark-mode .shop-content {
+            background: #222222;
+            /* Dark mode background */
+            color: #ffffff;
+            /* Dark mode text color */
+        }
+        /* Ensure links and buttons are visible in dark mode */
+        
+        .dark-mode .read-more {
+            color: #00bcd4;
+            /* Light blue for contrast */
+        }
     </style>
 </head>
 
