@@ -240,7 +240,7 @@
             <h2 class="bearcrumb-title">Blog Page</h2>
             <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Blog</span> </h3>
             <div class="blog-container grid">
-                <div class="blog-post grid">
+                <!-- <div class="blog-post grid">
                     <img class="blog-img" src="img/MSL.JPG" alt="" onclick="openLightbox(this)">
                     <div class="blog-info">
                         <p class="up-info">We are your number one jersey sponsor in the local teams</p>
@@ -251,14 +251,50 @@
                                 MSL put on a dominant display at <b>Arena One</b> on <b>February 9, 2025</b>, thrashing <b>Maps United 10-5</b> in a thrilling goal fest. <b>Rodgers stole the show with a hat-trick</b>, while <b>Eugene bagged a brace</b>                                to keep the scoreboard ticking. <b>Lawrence, aka Maresca, also found the net</b>, with <b>Arnold, Silvena, and Ronny making their presence felt</b> in MSL’s relentless attack. Between the posts, <b>Victor and Micky shared goalkeeping duties</b>,
                                 facing waves of pressure but standing firm when it mattered. Despite Maps United’s spirited fightback, MSL’s firepower proved too much, sealing a commanding victory in style.
                             </p>
-                        </div>
+                        </div> -->
 
-                        <!-- <div class="more">
+                <!-- <div class="more">
                             <a class="read-more" href="">
                                 Read More
                                 <i class="fas fa-arrow-right button-icon"></i>
                             </a>
                         </div> -->
+                <!-- <div class="more">
+                    <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
+                                Read More
+                                <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                </div>
+            </div>
+
+    </div> -->
+                <!-- Lightbox Container -->
+                <!-- <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                    <img id="lightbox-img" class="lightbox-img">
+                </div> -->
+                <div class="blog-post grid">
+                    <div class="slideshow-container">
+                        <img class="blog-img" src="img/MSL1.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/MSL2.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/MSL3.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/MSL4.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/MSL5.JPG" alt="" onclick="openLightbox(this)">
+                    </div>
+
+                    <div class="blog-info">
+                        <p class="up-info">We are your number one jersey sponsor in the local teams</p>
+                        <h3 class="info-title">Our First Appearance</h3>
+                        <p class="info-discription">By Admin / February 9 <sup>th</sup>, 2025/</p>
+
+                        <div class="hidden-content">
+                            <p>
+                                MSL put on a dominant display at <b>Arena One</b> on <b>February 9, 2025</b>, thrashing <b>Maps United 10-5</b> in a thrilling goal fest.
+                                <b>Rodgers stole the show with a hat-trick</b>, while <b>Eugene bagged a brace</b> to keep the scoreboard ticking.
+                                <b>Lawrence, aka Maresca, also found the net</b>, with <b>Arnold, Silvena, and Ronny making their presence felt</b> in MSL’s relentless attack. Between the posts, <b>Victor and Micky shared goalkeeping duties</b>, facing
+                                waves of pressure but standing firm when it mattered. Despite Maps United’s spirited fightback, MSL’s firepower proved too much, sealing a commanding victory in style.
+                            </p>
+                        </div>
+
                         <div class="more">
                             <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
                                 Read More
@@ -266,12 +302,14 @@
                             </a>
                         </div>
                     </div>
+                </div>
 
-                </div>
                 <!-- Lightbox Container -->
-                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-                    <img id="lightbox-img" class="lightbox-img">
+                <div id="lightbox" class="lightbox">
+                    <span class="close" onclick="closeLightbox()">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img">
                 </div>
+
                 <div class="blog-post grid">
                     <img class="blog-img" src="img/ghvicc.JPG" alt="" onclick="openLightbox(this)">
                     <div class="blog-info">
