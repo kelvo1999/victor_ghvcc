@@ -36,11 +36,38 @@
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
         }
+        /* Hide hidden content by default */
         
         .hidden-content {
             display: none;
             margin-top: 10px;
         }
+        /* Slideshow Container */
+        
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            overflow: hidden;
+        }
+        
+        .blog-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            cursor: pointer;
+            /* Add pointer to indicate clickable images */
+        }
+        /* Ensure first image is visible */
+        
+        .blog-img:first-child {
+            opacity: 1;
+        }
+        /* Lightbox Styling */
         
         .lightbox {
             display: none;
@@ -55,14 +82,14 @@
             z-index: 1000;
         }
         
+        .lightbox.show {
+            display: flex;
+        }
+        
         .lightbox-img {
             max-width: 90%;
             max-height: 90%;
             border-radius: 10px;
-        }
-        
-        .lightbox.show {
-            display: flex;
         }
         /* Default Light Mode Styles */
         
@@ -274,25 +301,43 @@
                 </div> -->
                 <div class="blog-post grid">
                     <div class="slideshow-container">
-                        <img class="blog-img" src="img/MSL1.JPG" alt="" onclick="openLightbox(this)">
-                        <img class="blog-img" src="img/MSL2.JPG" alt="" onclick="openLightbox(this)">
-                        <img class="blog-img" src="img/MSL3.JPG" alt="" onclick="openLightbox(this)">
-                        <img class="blog-img" src="img/MSL4.JPG" alt="" onclick="openLightbox(this)">
-                        <img class="blog-img" src="img/MSL5.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/1.jpg" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/2.jpg" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/3.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/4.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/5.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/6.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/7.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/8.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/9.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/10.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/11.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/12.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/13.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/14.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/15.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/16.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/17.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/18.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/19.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/20.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/21.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/22.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/23.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/24.JPG" alt="" onclick="openLightbox(this)">
+                        <img class="blog-img" src="img/25.JPG" alt="" onclick="openLightbox(this)">
                     </div>
 
                     <div class="blog-info">
-                        <p class="up-info">We are your number one jersey sponsor in the local teams</p>
-                        <h3 class="info-title">Our First Appearance</h3>
+                        <p class="up-info">Simplicity</p>
+                        <h3 class="up-info">Goal Fest at Arena One: MSL's Dominance Shines in 10-5 Thriller!</h3>
                         <p class="info-discription">By Admin / February 9 <sup>th</sup>, 2025/</p>
 
                         <div class="hidden-content">
                             <p>
-                                MSL put on a dominant display at <b>Arena One</b> on <b>February 9, 2025</b>, thrashing <b>Maps United 10-5</b> in a thrilling goal fest.
-                                <b>Rodgers stole the show with a hat-trick</b>, while <b>Eugene bagged a brace</b> to keep the scoreboard ticking.
-                                <b>Lawrence, aka Maresca, also found the net</b>, with <b>Arnold, Silvena, and Ronny making their presence felt</b> in MSL’s relentless attack. Between the posts, <b>Victor and Micky shared goalkeeping duties</b>, facing
-                                waves of pressure but standing firm when it mattered. Despite Maps United’s spirited fightback, MSL’s firepower proved too much, sealing a commanding victory in style.
-                            </p>
+                                On game days, the team embraces a mindset that mirrors our own aproach to a simple lifestyle. They prioritize a clear mental state, free from the noise of unnecessary distractions. Instead of overloading with complex plays or mind games, they rely on
+                                the basics-strong defense, efficient passing, and team work. Similarly, our lifestyle brand encourages redusing mental clutter and focusing on what truly matters. Whether it's through simplifying your wadrobe, redusing
+                                your digital distractions, or prioritizing quality moments with loved ones, we believe that cutting out the excess allows you to bring your best self to the field-both in sport and life.</p>
                         </div>
 
                         <div class="more">
@@ -305,12 +350,15 @@
                 </div>
 
                 <!-- Lightbox Container -->
-                <div id="lightbox" class="lightbox">
+                <!-- <div id="lightbox" class="lightbox">
                     <span class="close" onclick="closeLightbox()">&times;</span>
                     <img class="lightbox-content" id="lightbox-img">
+                </div> -->
+                <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                    <img class="lightbox-img" id="lightbox-img" alt="Expanded Image">
                 </div>
 
-                <div class="blog-post grid">
+                <div class="blog-post grid" style="visibility: hidden;">
                     <img class="blog-img" src="img/ghvicc.JPG" alt="" onclick="openLightbox(this)">
                     <div class="blog-info">
                         <p class="up-info">The Story Behind</p>
@@ -360,7 +408,7 @@
                     </div>
 
                 </div> -->
-                <div class="blog-post grid">
+                <div class="blog-post grid" style="visibility: hidden;">
                     <img class="blog-img" src="img/maps.JPG" alt="" onclick="openLightbox(this)">
 
                     <div class="blog-info">
@@ -512,19 +560,8 @@
         }
     </script>
     <!-- lightbox -->
-    <script>
-        function openLightbox(img) {
-            let lightbox = document.getElementById("lightbox");
-            let lightboxImg = document.getElementById("lightbox-img");
 
-            lightbox.style.display = "flex";
-            lightboxImg.src = img.src;
-        }
-
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
+    <script src="js/slider.js"></script>
     <script src="js/dark.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
