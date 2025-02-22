@@ -74,14 +74,34 @@
             object-fit: cover;
             position: absolute;
             opacity: 0;
-            transition: opacity 1s ease-in-out;
+            /*transition: opacity 1s ease-in-out;*/
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
             cursor: pointer;
             /* Add pointer to indicate clickable images */
+        }
+        
+        .blog-post.expanded .blog-img {
+            transform: translateX(-50%);
+            /* Move images to the left */
+            opacity: 0;
+            /* Hide them smoothly */
+        }
+        
+        .blog-post.expanded .hidden-content {
+            width: 100%;
+            /* Ensure text takes full space */
         }
         /* Ensure first image is visible */
         
         .blog-img:first-child {
             opacity: 1;
+        }
+        
+        .blog-post {
+            display: flex;
+            align-items: center;
+            /* Keep everything aligned properly */
+            transition: all 0.5s ease-in-out;
         }
         /* Lightbox Styling */
         
@@ -563,18 +583,33 @@
     <!-- ################## END STYLE SWITCHER  ############ -->
     <!-- Read more sricpt -->
     <script>
+        //function toggleReadMore(btn) {
+        //let hiddenContent = btn.parentElement.previousElementSibling; // Get the hidden content
+        //let slideshowContainer = document.querySelector(".slideshow-container"); // Get the images section
+
+        //if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+        //hiddenContent.style.display = "block"; // Show story
+        //slideshowContainer.style.display = "none"; // Hide images
+        //btn.innerHTML = 'Read Less <i class="fas fa-arrow-up button-icon"></i>'; // Change button text
+        //} else {
+        //hiddenContent.style.display = "none"; // Hide story
+        //slideshowContainer.style.display = "block"; // Show images
+        //btn.innerHTML = 'Read More <i class="fas fa-arrow-right button-icon"></i>'; // Change button text back
+        //}
+        //}
         function toggleReadMore(btn) {
-            let hiddenContent = btn.parentElement.previousElementSibling; // Get the hidden content
-            let slideshowContainer = document.querySelector(".slideshow-container"); // Get the images section
+            let blogPost = btn.closest(".blog-post"); // Get the closest blog-post container
+            let hiddenContent = blogPost.querySelector(".hidden-content");
+            let images = blogPost.querySelector(".blog-img");
 
             if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
-                hiddenContent.style.display = "block"; // Show story
-                slideshowContainer.style.display = "none"; // Hide images
-                btn.innerHTML = 'Read Less <i class="fas fa-arrow-up button-icon"></i>'; // Change button text
+                hiddenContent.style.display = "block"; // Show the text
+                blogPost.classList.add("expanded"); // Apply expanded styles
+                btn.innerHTML = "Read Less <i class='fas fa-arrow-left button-icon'></i>"; // Change button text
             } else {
-                hiddenContent.style.display = "none"; // Hide story
-                slideshowContainer.style.display = "block"; // Show images
-                btn.innerHTML = 'Read More <i class="fas fa-arrow-right button-icon"></i>'; // Change button text back
+                hiddenContent.style.display = "none"; // Hide the text
+                blogPost.classList.remove("expanded"); // Remove expanded styles
+                btn.innerHTML = "Read More <i class='fas fa-arrow-right button-icon'></i>"; // Change button text
             }
         }
     </script>
