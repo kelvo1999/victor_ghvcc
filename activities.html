@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GhViƆɔ</title>
+    <title>Activities</title>
     <!-- Main Templet CSS File  -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -38,14 +37,39 @@
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
         }
+        
+        .main {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+        /* Default Light Mode Styles */
+        
+        .shop-content {
+            background: #ffffff;
+            /* Light mode background */
+            color: #000000;
+            /* Light mode text color */
+            transition: background 0.3s, color 0.3s;
+        }
+        /* Dark Mode Styles */
+        
+        .dark-mode .shop-content {
+            background: #222222;
+            /* Dark mode background */
+            color: #ffffff;
+            /* Dark mode text color */
+        }
+        /* Ensure links and buttons are visible in dark mode */
+        
+        .dark-mode .read-more {
+            color: #00bcd4;
+            /* Light blue for contrast */
+        }
     </style>
-
-
 </head>
 
 <body>
-
-
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">
@@ -83,7 +107,6 @@
         </nav>
         <!-- <button id="theme-toggle">🌙 </button> -->
     </header>
-
     <!-- #################### CART #################### -->
     <div class="cart" id="cart">
         <i class="fas fa-times cart-close" id="cart-close"></i>
@@ -192,244 +215,6 @@
     </div>
 
     <!-- ################## END LOGIN ################# -->
-
-    <!-- ################## START HOME ################# -->
-
-    <div id="home" class="home container">
-        <div class="swiper home-swiper">
-            <div class="swiper-wrapper">
-                <!-- Swiper 1 -->
-                <section class="swiper-slide">
-                    <div class="home-content grid">
-                        <div class="home-group">
-                            <!-- <img class="home-img" src="imgs/Jacket2.png" alt="">
-                            <div class="home-ind"></div>
-                            <div class="home-img-details">
-                                <h4 class="home-details-title">The "Cardigan"</h4>
-                                <span class="home-details-subtitle">Woolen</span>
-                            </div> -->
-                        </div>
-                        <div class="home-data">
-                            <h3 class="home-subtitle">#1 TRENDING ITEM</h3>
-                            <h1 class="home-title">ORIGINAL <br> IS NEVER <br> FINISHED!!</h1>
-                            <p class="home-disc">A Spacialist Label Creating. Luxury essentials Luxury essential A Spacialist Label Creating. Luxury essentials, A Spacialist Label Creating.</p>
-                            <div class="home-buttons">
-                                <a href="details.html" class="button">Buy Now!</a>
-                                <a href="details.html" class="button-link button-flex">View Details <i class="fas fa-arrow-right button-icon"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Swiper 2 -->
-                <section class="swiper-slide">
-                    <div class="home-content grid">
-                        <div class="home-group">
-                            <!-- <img class="home-img" src="imgs/Jacket4.png" alt="">
-                            <div class="home-ind"></div>
-                            <div class="home-img-details">
-                                <h4 class="home-details-title">Juqueey</h4>
-                                <span class="home-details-subtitle">Ski Sweet</span>
-                            </div> -->
-                        </div>
-                        <div class="home-data">
-                            <h3 class="home-subtitle">#2 TOP BEST DUO</h3>
-                            <h1 class="home-title">FALL <br> WINTER <br> 2022</h1>
-                            <p class="home-disc">A Spacialist Label Creating. Luxury essentials Luxury essential A Spacialist Label Creating. Luxury essentials, A Spacialist Label Creating.</p>
-                            <div class="home-buttons">
-                                <a href="details.html" class="button">Buy Now!</a>
-                                <a href="details.html" class="button-link button-flex">View Details <i class="fas fa-arrow-right button-icon"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Swiper 3 -->
-                <section class="swiper-slide">
-                    <div class="home-content grid">
-                        <div class="home-group">
-                            <!-- <img class="home-img" src="imgs/Shirt.png" alt="">
-                            <div class="home-ind"></div>
-                            <div class="home-img-details">
-                                <h4 class="home-details-title">JUREEY</h4>
-                                <span class="home-details-subtitle">Zipper</span>
-                            </div> -->
-                        </div>
-                        <div class="home-data">
-                            <h3 class="home-subtitle">#3 TRENDING ITEM</h3>
-                            <h1 class="home-title">SALE <span class="main-color"> 20%</span> <br> OFF ON <br> EVRYTHING</h1>
-                            <p class="home-disc">A Spacialist Label Creating. Luxury essentials Luxury essential A Spacialist Label Creating. Luxury essentials, A Spacialist Label Creating.</p>
-                            <div class="home-buttons">
-                                <a href="details.html" class="button ">Buy Now!</a>
-                                <a href="details.html" class="button-link button-flex">View Details <i class="fas fa-arrow-right button-icon"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="swiper-pagination"> </div>
-        </div>
-    </div>
-
-    <!-- ################## END HOME ################# -->
-
-    <!-- ################## START DISCOUNT ################# -->
-    <!--     <div class="discount section">
-        <div class="discount-container container grid"> -->
-    <!-- <img class="discount-img" src="imgs/Jacket3.png" alt="discount img"> -->
-
-    <!--             <div class="discount-data">
-                <h2 class="discount-title">50% Discount <br>On New Products</h2>
-                <a class="button" href="#">Go to New</a>
-            </div>
-        </div>
-    </div> -->
-    <!-- ################## END DISCOUNT ################# -->
-    <!-- ################## START NEW AV ################# -->
-
-    <!--     <section class="new container section">
-        <h2 class="section-title">New Arrivals</h2>
-        <div class="new-container container">
-            <div class="swiper new-swiper">
-                <div class="swiper-wrapper">
-                    <!-- NEW CONTENT 1 -->
-    <!--                     <div class="new-content swiper-slide">
-                        <div class="new-tag">New</div> -->
-    <!-- <img class="new-img" src="imgs/Jacket2.png" alt="New"> -->
-    <!-- <h3 class="new-title">Windbreker Jacket</h3>
-                        <span class="new-subtitle">Accessory</span>
-
-                        <div class="new-prices">
-                            <span class="new-price">14.99$</span>
-                            <span class="new-discount">29.99$</span>
-                        </div>
-
-                        <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a> -->
-    <!--                     </div> -->
-    <!-- NEW CONTENT 2 -->
-    <!--                     <div class="new-content swiper-slide">
-                        <div class="new-tag">New</div> -->
-    <!-- <img class="new-img" src="imgs/short.png" alt="New">
-                        <h3 class="new-title">Short Jeans</h3>
-                        <span class="new-subtitle">Clothes</span>
-
-                        <div class="new-prices">
-                            <span class="new-price">10.99$</span>
-                            <span class="new-discount">21.99$</span>
-                        </div>
-
-                        <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a> -->
-    <!--                     </div>
-                    <!-- NEW CONTENT 3 -->
-    <!--                     <div class="new-content swiper-slide">
-                        <div class="new-tag">New</div> -->
-    <!-- <img class="new-img" src="imgs/Jacket3.png" alt="New">
-                        <h3 class="new-title">Fur Jacket</h3>
-                        <span class="new-subtitle">Accessory</span>
-
-                        <div class="new-prices">
-                            <span class="new-price">4.99$</span>
-                            <span class="new-discount">9.99$</span>
-                        </div>
-
-                        <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a> -->
-    <!--                     </div> -->
-    <!-- NEW CONTENT 4 -->
-    <!--                     <div class="new-content swiper-slide">
-                        <div class="new-tag">New</div> -->
-    <!-- <img class="new-img" src="imgs/h.png" alt="New">
-                        <h3 class="new-title">Cardigan Hoodie </h3>
-                        <span class="new-subtitle">Accessory</span>
-
-                        <div class="new-prices">
-                            <span class="new-price">14.99$</span>
-                            <span class="new-discount">29.99$</span>
-                        </div>
-
-                        <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a> -->
-    <!--                     </div> -->
-    <!-- NEW CONTENT 5 -->
-    <!--                     <div class="new-content swiper-slide">
-                        <div class="new-tag">New</div>
-                        <!-- <img class="new-img" src="imgs/Jacket4.png" alt="New"> -->
-    <!--                         <h3 class="new-title">Air Jourden Zipper</h3> -->
-    <!--                         <span class="new-subtitle">Clothes</span>
-
-                        <div class="new-prices">
-                            <span class="new-price">11.99$</span>
-                            <span class="new-discount">21.99$</span>
-                        </div>
-
-                        <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a> -->
-    <!--                     </div>  -->
-    <!-- NEW CONTENT 6 -->
-    <!--                     <div class="new-content swiper-slide">
-                        <div class="new-tag">New</div> -->
-    <!-- <img class="new-img" src="imgs/jeans.png" alt="New">
-                        <h3 class="new-title">Jeans</h3>
-                        <span class="new-subtitle">Accessory</span>
-
-                        <div class="new-prices">
-                            <span class="new-price">4.99$</span>
-                            <span class="new-discount">9.99$</span>
-                        </div>
-
-                        <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a> -->
-    <!--                     </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ################## END NEW AV ################# -->
-    <!-- ################## END NEW AV ################# -->
-    <!--     <div class="steps section container">
-
-        <h2 class="section-title">How To Order Products <br>From GhViƆɔ</h2>
-        <div class="steps-container grid">
-            <div class="steps-box">
-                <span class="number">01</span>
-                <h3 class="steps-title">Choose Products</h3>
-                <p class="steps-discription">
-                    We have severals varieties products you can choose from.
-                </p>
-            </div>
-            <div class="steps-box">
-                <span class="number">02</span>
-                <h3 class="steps-title">Place an Order</h3>
-                <p class="steps-discription">
-                    Once your order is set. we move to next step which is the shipping.
-                </p>
-            </div>
-            <div class="steps-box">
-                <span class="number">03</span>
-                <h3 class="steps-title">Get Order Delivered</h3>
-                <p class="steps-discription">
-                    Our delviery process is easy. you receive the order direct to your home.
-                </p>
-            </div>
-        </div>
-
-    </div> -->
-
-
-    <!-- ################## END STEPS ################# -->
-
-    <!-- ################# START NEWSLETTER ########### -->
-
-    <!--     <div class="newsletter section">
-        <div class="newsletter-container container">
-            <h2 class="section-title">Our Newsletter</h2>
-            <p class="newsletter-discription">Promotion New Products And Sales. Directly To Your Inbox </p>
-
-            <form class="newsletter-form" action="#">
-                <input class="newsletter-input" placeholder="Enter Your E-mail" type="email" name="newsletter">
-                <button class="button">Subscribe</button>
-            </form>
-        </div>
-    </div> -->
-
-    <!-- ################## END NEWSLETTER ############ -->
-
-
     <!-- ################## START FOOTER ############ -->
     <footer class="footer section">
         <div class="footer-container container grid">
@@ -576,9 +361,6 @@
 
         </div>
     </div>
-
-    <!-- ################## END STYLE SWITCHER  ############ -->
-
     <!-- autotypying script -->
     <script>
         const text = "Simplicity & Sustainability. ";
@@ -609,7 +391,6 @@
     <script src="js/main.js "></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js "></script>
-
 </body>
 
 </html>
