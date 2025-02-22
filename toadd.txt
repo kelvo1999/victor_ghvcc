@@ -1,0 +1,9 @@
+community and connection--> activities--> Monthly meetups
+                                        --> virtual workshops
+                                        --> stories
+                        --> Donation
+                        --> Join us
+
+Blog --> small screen integreation
+        --> dark mode on hambuger
+        --> 
