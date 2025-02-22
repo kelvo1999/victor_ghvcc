@@ -40,7 +40,23 @@
         
         .hidden-content {
             display: none;
-            margin-top: 10px;
+            width: 100%;
+            /* Make it full width */
+            text-align: justify;
+            /* Make text look cleaner */
+            padding: 10px;
+            /* Add some spacing */
+        }
+        
+        .blog-info {
+            width: 100%;
+            /* Ensure the whole section expands */
+        }
+        
+        .read-more {
+            display: block;
+            text-align: center;
+            /* Center the "Read More" button */
         }
         /* Slideshow Container */
         
@@ -329,18 +345,18 @@
                     </div>
 
                     <div class="blog-info">
-                        <p class="up-info">Simplicity</p>
+                        <p class="up-info">TIMES LIKE THIS</p>
                         <h3 class="up-info">Goal Fest at Arena One: MSL's Dominance Shines in 10-5 Thriller!</h3>
                         <p class="info-discription">By Admin / February 9 <sup>th</sup>, 2025/</p>
 
-                        <div class="hidden-content">
+                        <div class="hidden-content" style="display: none;">
                             <p>
                                 On game days, the team embraces a mindset that mirrors our own aproach to a simple lifestyle. They prioritize a clear mental state, free from the noise of unnecessary distractions. Instead of overloading with complex plays or mind games, they rely on
                                 the basics-strong defense, efficient passing, and team work. Similarly, our lifestyle brand encourages redusing mental clutter and focusing on what truly matters. Whether it's through simplifying your wadrobe, redusing
                                 your digital distractions, or prioritizing quality moments with loved ones, we believe that cutting out the excess allows you to bring your best self to the field-both in sport and life.</p>
                         </div>
 
-                        <div class="more">
+                        <div class=" more">
                             <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
                                 Read More
                                 <i class="fas fa-arrow-right button-icon"></i>
@@ -350,102 +366,102 @@
                 </div>
 
                 <!-- Lightbox Container -->
-                <!-- <div id="lightbox" class="lightbox">
-                    <span class="close" onclick="closeLightbox()">&times;</span>
-                    <img class="lightbox-content" id="lightbox-img">
+                <!-- <div id="lightbox " class="lightbox ">
+                    <span class="close " onclick="closeLightbox() ">&times;</span>
+                    <img class="lightbox-content " id="lightbox-img ">
                 </div> -->
                 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
                     <img class="lightbox-img" id="lightbox-img" alt="Expanded Image">
                 </div>
 
                 <div class="blog-post grid" style="visibility: hidden;">
-                    <img class="blog-img" src="img/ghvicc.JPG" alt="" onclick="openLightbox(this)">
-                    <div class="blog-info">
-                        <p class="up-info">The Story Behind</p>
-                        <h3 class="info-title">Your Number one Slick Artists</h3>
-                        <p class="info-discription">By Admin / February 9
+                    <img class="blog-img" src="img/ghvicc.JPG" alt=" " onclick="openLightbox(this) ">
+                    <div class="blog-info ">
+                        <p class="up-info ">The Story Behind</p>
+                        <h3 class="info-title ">Your Number one Slick Artists</h3>
+                        <p class="info-discription ">By Admin / February 9
                             <sup>th</sup>, 2025 /</p>
-                        <div class="hidden-content">
+                        <div class="hidden-content ">
                             <p>
                                 GhViƆɔ is the epitome of luxury, blending sophistication with a bold, modern edge. Every detail of the brand exudes class and exclusivity, from its sleek designs to its premium craftsmanship. Whether it's fashion, accessories, or lifestyle essentials,
                                 GhViƆɔ stands as a symbol of elegance, catering to those who appreciate refined aesthetics and high-end quality. With a perfect fusion of contemporary style and timeless appeal, GhViƆɔ is not just a brand—it’s a statement
                                 of prestige and finesse. </p>
                         </div>
 
-                        <div class="more">
-                            <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
+                        <div class="more ">
+                            <a class="read-more " href="javascript:void(0); " onclick="toggleReadMore(this) ">
                                     Read More
-                                    <i class="fas fa-arrow-right button-icon"></i>
+                                    <i class="fas fa-arrow-right button-icon "></i>
                                 </a>
                         </div>
                     </div>
 
                 </div>
                 <!-- Lightbox Container -->
-                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-                    <img id="lightbox-img" class="lightbox-img">
+                <div id="lightbox " class="lightbox " onclick="closeLightbox() ">
+                    <img id="lightbox-img " class="lightbox-img ">
                 </div>
-                <!-- <div class="blog-post grid">
-                    <img class="blog-img" src="img/maps.jpg" alt="">
-                    <div class="blog-info">
-                        <p class="up-info">More like Friends</p>
-                        <h3 class="info-title">The Rivals</h3>
+                <!-- <div class="blog-post grid ">
+                    <img class="blog-img " src="img/maps.jpg " alt=" ">
+                    <div class="blog-info ">
+                        <p class="up-info ">More like Friends</p>
+                        <h3 class="info-title ">The Rivals</h3>
 
-                        <p class="info-discription">By Admin / February 9
+                        <p class="info-discription ">By Admin / February 9
                             <sup>th</sup>, 2025 /</p>
-                        <div class="hidden-content">
+                        <div class="hidden-content ">
                             <p>MSL put on a dominant display at Arena One on February 9, 2025, thrashing Maps United 10-5 in a thrilling goal fest. Rodgers stole the show with a hat-trick, while Eugene bagged a brace to keep the scoreboard ticking. Lawrence,
                                 aka Maresca, also found the net, with Arnold, Silvena, and Ronny making their presence felt in MSL’s relentless attack. Victor and Micky held things down between the posts, facing waves of pressure. However, Maps United
                                 showed fighting spirit, with Cyrus, Ken, and Simon finding the back of the net, keeping the game exciting. Despite their efforts, MSL’s firepower proved too much, sealing a commanding victory in style.</p>
                         </div>
 
-                        <div class="more">
-                            <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
+                        <div class="more ">
+                            <a class="read-more " href="javascript:void(0); " onclick="toggleReadMore(this) ">
                                         Read More
-                                        <i class="fas fa-arrow-right button-icon"></i>
+                                        <i class="fas fa-arrow-right button-icon "></i>
                                     </a>
                         </div>
                     </div>
 
                 </div> -->
-                <div class="blog-post grid" style="visibility: hidden;">
-                    <img class="blog-img" src="img/maps.JPG" alt="" onclick="openLightbox(this)">
+                <div class="blog-post grid " style="visibility: hidden; ">
+                    <img class="blog-img " src="img/maps.JPG " alt=" " onclick="openLightbox(this) ">
 
-                    <div class="blog-info">
-                        <p class="up-info">More like Friends</p>
-                        <h3 class="info-title">The Rivals</h3>
-                        <p class="info-description">By Admin / February 9<sup>th</sup>, 2025 /</p>
+                    <div class="blog-info ">
+                        <p class="up-info ">More like Friends</p>
+                        <h3 class="info-title ">The Rivals</h3>
+                        <p class="info-description ">By Admin / February 9<sup>th</sup>, 2025 /</p>
 
-                        <div class="hidden-content">
+                        <div class="hidden-content ">
                             <p>MSL put on a dominant display at Arena One on February 9, 2025, thrashing Maps United 10-5 in a thrilling goal fest. Rodgers stole the show with a hat-trick, while Eugene bagged a brace to keep the scoreboard ticking. Lawrence,
                                 aka Maresca, also found the net, with Arnold, Silvena, and Ronny making their presence felt in MSL’s relentless attack. Victor and Micky held things down between the posts, facing waves of pressure. However, Maps United
                                 showed fighting spirit, with Cyrus, Ken, and Simon finding the back of the net, keeping the game exciting. Despite their efforts, MSL’s firepower proved too much, sealing a commanding victory in style.</p>
                         </div>
 
-                        <div class="more">
-                            <a class="read-more" href="javascript:void(0);" onclick="toggleReadMore(this)">
+                        <div class="more ">
+                            <a class="read-more " href="javascript:void(0); " onclick="toggleReadMore(this) ">
                                 Read More
-                                <i class="fas fa-arrow-right button-icon"></i>
+                                <i class="fas fa-arrow-right button-icon "></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Lightbox Container -->
-                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-                    <img id="lightbox-img" class="lightbox-img">
+                <div id="lightbox " class="lightbox " onclick="closeLightbox() ">
+                    <img id="lightbox-img " class="lightbox-img ">
                 </div>
             </div>
-            <div class="pagination">
-                <i class="fas fa-chevron-left"></i>
+            <div class="pagination ">
+                <i class="fas fa-chevron-left "></i>
 
-                <span class="current">1</span>
+                <span class="current ">1</span>
                 <!-- <span>2</span>
                 <span>3</span>
                 <span>&middot; &middot;</span>
                 <span>9</span> -->
 
-                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right "></i>
 
             </div>
         </section>
@@ -459,68 +475,68 @@
 
 
     <!-- ################## START FOOTER ############ -->
-    <footer class="footer section">
-        <div class="footer-container container grid">
+    <footer class="footer section ">
+        <div class="footer-container container grid ">
             <!-- FOOTER CONTENT 1 -->
-            <div class="footer-content" style="visibility:hidden;">
-                <a href="index.html" class="footer-logo">
-                    <img src="imgs/logo.png" class="gh" alt="" style="height: 35px;width: 35px; border-radius: 50%;">
+            <div class="footer-content " style="visibility:hidden; ">
+                <a href="index.html " class="footer-logo ">
+                    <img src="imgs/logo.png " class="gh " alt=" " style="height: 35px;width: 35px; border-radius: 50%; ">
                     <p> GhViƆɔ</p>
                 </a>
 
-                <p class="footer-discription">Enjoy the biggest sale <br> of your life.</p>
-                <div class="footer-social">
-                    <a class="footer-social-link" href="https://www.facebook.com/mahmoudhofnyy"><i class="fab fa-facebook"></i></a>
-                    <a class="footer-social-link" href="https://www.instagram.com/mahmoudhofnyy"><i class="fab fa-instagram"></i></a>
-                    <a class="footer-social-link" href="https://www.twitter.com/mahmoudhofnyy"><i class="fab fa-twitter"></i></a>
+                <p class="footer-discription ">Enjoy the biggest sale <br> of your life.</p>
+                <div class="footer-social ">
+                    <a class="footer-social-link " href="https://www.facebook.com/mahmoudhofnyy "><i class="fab fa-facebook "></i></a>
+                    <a class="footer-social-link " href="https://www.instagram.com/mahmoudhofnyy "><i class="fab fa-instagram "></i></a>
+                    <a class="footer-social-link " href="https://www.twitter.com/mahmoudhofnyy "><i class="fab fa-twitter "></i></a>
                 </div>
             </div>
             <!-- FOOTER CONTENT 2 -->
-            <div class="footer-content" style="visibility:hidden;">
-                <h3 class="footer-title">About</h3>
-                <ul class="footer-links">
-                    <li><a class="footer-link" href="about.html">About Us</a></li>
-                    <li><a class="footer-link" href="">Customer Support</a></li>
-                    <li><a class="footer-link" href="">Support Center</a></li>
+            <div class="footer-content " style="visibility:hidden; ">
+                <h3 class="footer-title ">About</h3>
+                <ul class="footer-links ">
+                    <li><a class="footer-link " href="about.html ">About Us</a></li>
+                    <li><a class="footer-link " href=" ">Customer Support</a></li>
+                    <li><a class="footer-link " href=" ">Support Center</a></li>
                 </ul>
             </div>
             <!-- FOOTER CONTENT 3 -->
-            <div class="footer-content" style="visibility:hidden;">
-                <h3 class="footer-title">Our Services</h3>
-                <ul class="footer-links">
-                    <li><a class="footer-link" href="">Shop</a></li>
-                    <li><a class="footer-link" href="">Discount</a> </li>
-                    <li><a class="footer-link" href="">Shipping Mode</a></li>
+            <div class="footer-content " style="visibility:hidden; ">
+                <h3 class="footer-title ">Our Services</h3>
+                <ul class="footer-links ">
+                    <li><a class="footer-link " href=" ">Shop</a></li>
+                    <li><a class="footer-link " href=" ">Discount</a> </li>
+                    <li><a class="footer-link " href=" ">Shipping Mode</a></li>
                 </ul>
             </div>
             <!-- FOOTER CONTENT 4 -->
-            <div class="footer-content" style="visibility:hidden;">
-                <h3 class="footer-title">Our Company</h3>
+            <div class="footer-content " style="visibility:hidden; ">
+                <h3 class="footer-title ">Our Company</h3>
 
-                <ul class="footer-links">
-                    <li><a class="footer-link" href="">Register</a></li>
-                    <li><a class="footer-link" href="">Contact Us</a></li>
-                    <li><a class="footer-link" href="about.html">About Us</a></li>
+                <ul class="footer-links ">
+                    <li><a class="footer-link " href=" ">Register</a></li>
+                    <li><a class="footer-link " href=" ">Contact Us</a></li>
+                    <li><a class="footer-link " href="about.html ">About Us</a></li>
                 </ul>
             </div>
         </div>
-        <!-- <span class="footer-copy">&#169; <span class="main-color">GhViƆɔ</span> All Right reserved. </span> -->
-        <span class="footer-copy">&#169; <span class="main-color">GhViƆɔ</span> <span id="year"></span> All Right reserved. </span>
+        <!-- <span class="footer-copy ">&#169; <span class="main-color ">GhViƆɔ</span> All Right reserved. </span> -->
+        <span class="footer-copy ">&#169; <span class="main-color ">GhViƆɔ</span> <span id="year "></span> All Right reserved. </span>
         <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("year ").textContent = new Date().getFullYear();
         </script>
     </footer>
     <!-- ################## END FOOTER ############ -->
 
 
     <!-- ################## SCROLL UP ############ -->
-    <a class="scroll-up" id="scroll-up" href="#"><i class="fas fa-arrow-up"></i></a>
+    <a class="scroll-up " id="scroll-up " href="# "><i class="fas fa-arrow-up "></i></a>
 
     <!-- ################## START STYLE SWITCHER  ############ -->
 
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
+    <div class="style-switcher ">
+        <div class="style-switcher-toggler s-icon ">
+            <i class="fas fa-cog fa-spin "></i>
 
         </div>
         <h4>Theme Colors</h4>
@@ -548,14 +564,17 @@
     <!-- Read more sricpt -->
     <script>
         function toggleReadMore(btn) {
-            let content = btn.closest('.blog-info').querySelector('.hidden-content');
+            let hiddenContent = btn.parentElement.previousElementSibling; // Get the hidden content
+            let slideshowContainer = document.querySelector(".slideshow-container"); // Get the images section
 
-            if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "block";
-                btn.innerHTML = "Read Less <i class='fas fa-arrow-up button-icon'></i>";
+            if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+                hiddenContent.style.display = "block"; // Show story
+                slideshowContainer.style.display = "none"; // Hide images
+                btn.innerHTML = 'Read Less <i class="fas fa-arrow-up button-icon"></i>'; // Change button text
             } else {
-                content.style.display = "none";
-                btn.innerHTML = "Read More <i class='fas fa-arrow-right button-icon'></i>";
+                hiddenContent.style.display = "none"; // Hide story
+                slideshowContainer.style.display = "block"; // Show images
+                btn.innerHTML = 'Read More <i class="fas fa-arrow-right button-icon"></i>'; // Change button text back
             }
         }
     </script>
