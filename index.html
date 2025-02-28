@@ -38,6 +38,92 @@
             color: var(--text-color);
             transition: background 0.3s, color 0.3s;
         }
+        /* Popup Styling */
+        
+        .popup {
+            display: none;
+            /* Initially hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .popup-content {
+            background: white;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .popup-content h2 {
+            margin-bottom: 10px;
+        }
+        
+        .popup-content input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .popup-content button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        .popup-content button:hover {
+            background: #0056b3;
+        }
+        /* Close Button */
+        
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        /* Skip link */
+        
+        .skip {
+            margin-top: 10px;
+            color: #007bff;
+            cursor: pointer;
+        }
+        
+        .skip:hover {
+            text-decoration: underline;
+        }
+        /* Fade in animation */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
     </style>
 
 
@@ -184,7 +270,7 @@
             </div>
             <div>
                 <p class="signup">Not a member?
-                    <a href="regisration.html">SignUp</a>
+                    <a href="#popup-container">SignUp</a>
                 </p>
             </div>
         </form>
@@ -194,6 +280,23 @@
     <!-- ################## END LOGIN ################# -->
 
     <!-- ################## START HOME ################# -->
+
+    <!-- Registration Popup -->
+    <div id="popup-container" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Sign Up Now</h2>
+            <p>Join us today and never miss an update!</p>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Create Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p class="skip" onclick="closePopup()">No, thanks</p>
+        </div>
+    </div>
+
 
     <div id="home" class="home container">
         <div class="swiper home-swiper">
@@ -603,6 +706,17 @@
 
         window.onload = type;
     </script>
+    <script>
+        // Show popup after 5 seconds
+        setTimeout(() => {
+            document.getElementById("popup-container").style.display = "flex";
+        }, 5000);
+
+        // Close popup function
+        function closePopup() {
+            document.getElementById("popup-container").style.display = "none";
+        }
+    </script>
 
     <script src="js/dark.js "></script>
 
@@ -612,5 +726,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js "></script>
 
 </body>
+
+</html>
 
 </html>
