@@ -7,7 +7,7 @@ function showSlides() {
         slide.style.opacity = i === slideIndex ? "1" : "0";
     });
     slideIndex = (slideIndex + 1) % slides.length; // Loop through images
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 1500); // Change image every 2 seconds
 }
 
 showSlides(); // Start the slideshow

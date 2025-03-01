@@ -59,6 +59,42 @@
                 transform: translateX(-100%);
             }
         }
+        
+        .responsive {
+            width: 50%;
+            /* Responsive width */
+            max-width: 200px;
+            /* Prevents excessive growth */
+            height: auto;
+            /* Maintains aspect ratio */
+            border-radius: 10%;
+            opacity: 0.8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            /* Centers on all screen sizes */
+            position: relative;
+        }
+        /* Responsive adjustments for smaller screens */
+        
+        @media (max-width: 768px) {
+            .about-head {
+                width: 100%;
+                /* Increases width on smaller screens */
+                max-width: 150px;
+                /* Adjusts size */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .about-head {
+                width: 90%;
+                /* Full width on very small screens */
+                max-width: 120px;
+                /* Even smaller size */
+            }
+        }
     </style>
 </head>
 
@@ -210,10 +246,11 @@
             <!-- <h2 class="bearcrumb-title">About Us</h2> -->
             <!-- <h3 class="bearcrumb-subtitle">Home > <span class="main-color">About Us</span> </h3> -->
             <div class="about-container grid">
-                <img class="about-img" src="img/ab.png" alt="" style="width:200px; height:250px; border-radius:10%;opacity:80%;">
+                <!-- <img class="about-img" src="img/ab.PNG" alt="" style="width:200px; height:250px; border-radius:10%;opacity:80%;"> -->
                 <div class="about-data">
-                    <div class="about-head">
-                        <h2 class="about-title section-title">
+                    <div class="about-head" style="align-items: center; position:relative;left:72%;">
+                        <!-- <div class="responsive-box"> -->
+                        <!-- <h2 class="about-title section-title">
                             who really We Are <br> Why Choose Us
                         </h2>
                         <p class="about-main-description">
@@ -229,7 +266,19 @@
                         </p>
                         <p class="about-description">
                             <i class="fas fa-check-square"></i> 100% money back Guaranted.
-                        </p>
+                        </p> -->
+                        <img class="about-img" src="img/abo.png" alt="" style="width:200px; height:250px; border-radius:10%;opacity:100%;align-items: center; position:relative;left:32%;"><br>
+                        <p>Welcome to GhViƆɔ, where simplicity meets mindfulness, and sustainability is the heart of everything we do.</p>
+                        <p>We believe life should be lived with intention.</p>
+                        <p>In a world that’s constantly moving fast and asking for more, we’re here to help you slow down, reconnect, and find joy in the simple things. </p>
+                        <p>Whether it’s the warmth of a morning sun, the quiet moments of reflection, or the joy of using something designed with care, we’re here to remind you that less truly can be more.</p>
+                        <p>Our brand was born from a passion for mindful living and a deep respect for our planet. </p>
+                        <p>We believe in making choices that matter—not just for today, but for tomorrow. </p>
+                        <p>From sustainably sourced materials to designs that bring calm and clarity, every product we create is a reflection of our commitment to simplicity and purpose.</p>
+                        <p>At GhViƆɔ, we’re not just about products; we’re about creating a lifestyle that supports well-being, encourages mindful living, and inspires a deeper connection with the world around us. </p>
+                        <p>We want to make it easy for you to live a life that’s eco-conscious, intentional, and, most importantly, full of peace.</p>
+                        <p>Join us on this journey toward a simpler, more sustainable, and more meaningful life.</p>
+                        <p>Live simply. Live mindfully. Live beautifully.</p>
                     </div>
                 </div>
 
