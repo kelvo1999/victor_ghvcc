@@ -19,11 +19,13 @@
          :root {
             --bg-color: #F6E0BC;
             --text-color: #000000;
+            --title-color: #72797e;
         }
         
         .dark-mode {
             --bg-color: #121212;
-            --text-color: #ffffff;
+            --text-color: #72797e;
+            --title-color: #72797e;
         }
         
         body {
@@ -101,6 +103,7 @@
         .blog-post {
             display: flex;
             align-items: center;
+            /*background-color: #F6E0BC;*/
             /* Keep everything aligned properly */
             transition: all 0.5s ease-in-out;
         }
@@ -161,7 +164,7 @@
         /* Default Light Mode Styles */
         
         .blog-post.grid {
-            background: #ffffff;
+            background: #F6E0BC;
             /* Light mode background */
             color: #000000;
             /* Light mode text color */
@@ -196,6 +199,7 @@
                     <li class="item"><a class="nav-link " href="index.html">Home</a></li>
                     <li class="item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="item"><a class="nav-link active-link" href="blog.html">Mindful Living</a></li>
+
                     <li class="item"><a class="nav-link" href="shop.html"> Explore Collection</a></li>
                     <li class="item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     <li class="item" id="theme-toggle"><a class="nav-link" href="">Mode</a></li>

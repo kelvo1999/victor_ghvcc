@@ -20,11 +20,13 @@
          :root {
             --bg-color: #F6E0BC;
             --text-color: #000000;
+            --title-color: #72797e;
         }
         
         .dark-mode {
             --bg-color: #121212;
-            --text-color: #ffffff;
+            --text-color: #72797e;
+            --title-color: #72797e;
         }
         
         body {
@@ -40,7 +42,7 @@
         }
         
         .contact-inputs {
-            background: #ffffff;
+            background: #F6E0BC;
             /* Light mode background */
             color: #000000;
             /* Light mode text color */
@@ -48,7 +50,7 @@
         }
         
         .contact-content {
-            background: #ffffff;
+            background: #F6E0BC;
             /* Light mode background */
             color: #000000;
             /* Light mode text color */
@@ -56,7 +58,7 @@
         }
         
         .contact-input {
-            background: #ffffff;
+            background: #F6E0BC;
             /* Light mode background */
             color: #000000;
             /* Light mode text color */
@@ -64,7 +66,7 @@
         }
         
         .contact-label {
-            background: #ffffff;
+            background: #F6E0BC;
             /* Light mode background */
             color: #000000;
             /* Light mode text color */
@@ -103,6 +105,7 @@
         .dark-mode .contact-input {
             background: #222222;
             /* Dark mode background */
+            /*color: #B2AC88;*/
             color: #ffffff;
             /* Dark mode text color */
         }
@@ -125,11 +128,12 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-items" id="nav-items">
                     <li class="item"><a class="nav-link " href="index.html">Home</a></li>
-                    <li class="item"><a class="nav-link" href="shop.html">Shop</a></li>
-                    <li class="item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="item"><a class="nav-link" href="faq.html">Faq's</a></li>
-                    <li class="item"><a class="nav-link active-link" href="contact.html">Contact</a></li>
+                    <li class="item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="item"><a class="nav-link " href="blog.html">Mindful Living</a></li>
+                    <li class="item"><a class="nav-link" href="faq.html">How We Live It</a></li>
+                    <li class="item"><a class="nav-link" href="shop.html"> Explore Collection</a></li>
+                    <li class="item"><a class="nav-link active-link" href="contact.html">Contact Us</a></li>
+                    <!-- <li class="item" id="theme-toggle"><a class="nav-link" href="">Mode</a></li> -->
                     <button id="theme-toggle" style="background-color: transparent;">Mode </button>
                 </ul>
             </div>
@@ -259,7 +263,8 @@
     <div class="main">
         <section class="contact section container">
             <h2 class="bearcrumb-title">Contact Us</h2>
-            <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Contact Us</span> </h3>
+            <br>
+            <!-- <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Contact Us</span> </h3> -->
             <div class="contact-container grid">
                 <div>
                     <div class="contact-info">
@@ -288,23 +293,23 @@
                     <div class="contact-inputs grid">
                         <div class="contact-content">
                             <label for="" class="contact-label">Name</label>
-                            <input type="text" class="contact-input">
+                            <input type="text" class="contact-input" placeholder="Type here...">
                         </div>
                         <div class="contact-content">
                             <label for="" class="contact-label">Email</label>
-                            <input type="email" class="contact-input">
+                            <input type="email" class="contact-input" placeholder="Type here...">
                         </div>
                     </div>
-                    <div class="contact-content">
-                        <label for="" class="contact-label">Subject</label>
-                        <input type="text" class="contact-input">
+                    <div class=" contact-content ">
+                        <label for=" " class="contact-label ">Subject</label>
+                        <input type="text " class="contact-input " placeholder="Type here...">
                     </div>
-                    <div class="contact-content">
-                        <label for="" class="content-label">Message</label>
-                        <textarea class="contact-input" name="" id="" cols="0" rows="7"></textarea>
+                    <div class="contact-content ">
+                        <label for=" " class="content-label ">Message</label>
+                        <textarea class="contact-input " name=" " id=" " cols="0 " rows="7 " placeholder="Type here..."></textarea>
                     </div>
                     <div>
-                        <a href="" class="button">Send Message</a>
+                        <a href=" " class="button ">Send Message</a>
                     </div>
                 </form>
             </div>
@@ -316,10 +321,10 @@
 
 
     <!-- ################## START FOOTER ############ -->
-    <footer class="footer section">
-        <div class="footer-container container grid">
+    <footer class="footer section ">
+        <div class="footer-container container grid ">
             <!-- FOOTER CONTENT 1 -->
-            <div class="footer-content">
+            <div class="footer-content ">
                 <a href="index.html " class="footer-logo " style="visibility:hidden; ">
                     <!-- <i class="fas fa-box footer-logo-icon "></i> -->
                     <img src="imgs/logo.png " class="gh " alt=" " style="height: 35px;width: 35px; border-radius: 50%; ">
@@ -388,27 +393,27 @@
         </div>
         <h4>Theme Colors</h4>
 
-        <div class="themes-colors js-theme-colors">
-            <button type="button" data-js-themes-color="color-1" class="js-theme-color-item themes-button color-1">
-                <i class="fas fa-check"></i>
+        <div class="themes-colors js-theme-colors ">
+            <button type="button " data-js-themes-color="color-1 " class="js-theme-color-item themes-button color-1 ">
+                <i class="fas fa-check "></i>
             </button>
-            <button type="button" data-js-themes-color="color-2" class="js-theme-color-item themes-button color-2">
-                <i class="fas fa-check"></i>
+            <button type="button " data-js-themes-color="color-2 " class="js-theme-color-item themes-button color-2 ">
+                <i class="fas fa-check "></i>
             </button>
-            <button type="button" data-js-themes-color="color-3" class="js-theme-color-item themes-button color-3">
-                <i class="fas fa-check"></i>
+            <button type="button " data-js-themes-color="color-3 " class="js-theme-color-item themes-button color-3 ">
+                <i class="fas fa-check "></i>
             </button>
-            <button type="button" data-js-themes-color="color-4" class="js-theme-color-item themes-button color-4">
-                <i class="fas fa-check"></i>
+            <button type="button " data-js-themes-color="color-4 " class="js-theme-color-item themes-button color-4 ">
+                <i class="fas fa-check "></i>
             </button>
-            <button type="button" data-js-themes-color="color-5" class="js-theme-color-item themes-button color-5">
-                <i class="fas fa-check"></i>
+            <button type="button " data-js-themes-color="color-5 " class="js-theme-color-item themes-button color-5 ">
+                <i class="fas fa-check "></i>
             </button>
         </div>
     </div>
 
     <!-- ################## END STYLE SWITCHER  ############ -->
-    <script src="js/dark.js"></script>
+    <script src="js/dark.js "></script>
     <script src="js/swiper-bundle.min.js "></script>
     <script src="js/main.js "></script>
 </body>

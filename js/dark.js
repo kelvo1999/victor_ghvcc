@@ -4,7 +4,7 @@ const body = document.body;
 // Check if user has a preference
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-mode");
-    toggleButton.textContent = "Mode ";
+    toggleButton.textContent = "Off ";
 }
 
 // Toggle Function
@@ -14,9 +14,9 @@ toggleButton.addEventListener("click", () => {
     // Save User Preference
     if (body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
-        toggleButton.textContent = "Mode ";
+        toggleButton.textContent = "Off ";
     } else {
         localStorage.setItem("theme", "light");
-        toggleButton.textContent = "Mode";
+        toggleButton.textContent = "On";
     }
 });
