@@ -135,6 +135,26 @@
                 transform: scale(1);
             }
         }
+        
+        .popup-success {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .popup-success .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
     </style>
 
 
@@ -316,6 +336,15 @@
                 <button type="submit">Join our newsletter for Mindful Living Tips!</button>
 
             </form>
+            <!-- Success Popup (Hidden by Default) -->
+            <div id="successPopup" class="popup-success" style="display: none;">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closeSuccessPopup()">&times;</span>
+                    <h2>Thank You!</h2>
+                    <p>You have successfully subscribed to our newsletter.</p>
+                </div>
+            </div>
+
             <p class="skip" onclick="closePopup()">Later</p>
         </div>
     </div>

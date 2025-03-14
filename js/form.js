@@ -12,18 +12,19 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         .then(response => response.json())
         .then(data => {
             if (data.ok) {
-                document.getElementById("responseMessage").textContent = "Thank you for subscribing!";
-                document.getElementById("responseMessage").style.display = "block";
+                document.getElementById("popup-container").style.display = "none"; // Hide the form popup
+                document.getElementById("successPopup").style.display = "block"; // Show success popup
                 form.reset(); // Clear the form fields
             } else {
-                document.getElementById("responseMessage").textContent = "Failed to send message.";
-                document.getElementById("responseMessage").style.color = "red";
-                document.getElementById("responseMessage").style.display = "block";
+                alert("Failed to subscribe. Please try again.");
             }
         })
         .catch(error => {
-            document.getElementById("responseMessage").textContent = "Error sending message.";
-            document.getElementById("responseMessage").style.color = "red";
-            document.getElementById("responseMessage").style.display = "block";
+            alert("Error sending message.");
         });
 });
+
+// Close success popup
+function closeSuccessPopup() {
+    document.getElementById("successPopup").style.display = "none";
+}
