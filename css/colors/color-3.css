@@ -1,5 +1,13 @@
-:root {
+/* :root {
     --hue: 336;
     --first-color: hsl(var(--hue), 88%, 61%);
     --first-color-alt: hsl(var(--hue), 88%, 50%);
+} */
+
+ :root {
+    --hue: 0;
+    /* Set hue to 0 (since it's grayscale, hue doesn't matter) */
+    --first-color: hsl(var(--hue), 0%, 75%);
+    --first-color-alt: hsl(var(--hue), 0%, 65%);
+    /* A slightly darker alternative */
 }
