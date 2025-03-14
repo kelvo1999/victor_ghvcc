@@ -5,7 +5,8 @@
         --header-height: 3.5rem;
         --title-color: hsl(250, 8%, 15%);
         --text-color: hsl(250, 8%, 35%);
-        --body-color: hsl(250, 60%, 98%);
+        /* --body-color: hsl(250, 60%, 98%); */
+        --body-color: #F6E0BC;
         --shadow: hsla(0, 0%, 15%, .1);
         --con-color: #fff;
         --scroll-color: hsl(250, 120, 90%);
