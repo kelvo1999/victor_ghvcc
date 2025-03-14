@@ -65,7 +65,7 @@
         
         .popup-content {
             /*background: white;*/
-            background: #36454F;
+            background: #5b99c2;
             padding: 20px;
             width: 90%;
             max-width: 400px;
@@ -86,7 +86,7 @@
             margin: 5px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background: #36454F;
+            background: #f5f8fa;
         }
         
         .popup-content button {
@@ -116,7 +116,7 @@
         
         .skip {
             margin-top: 10px;
-            color: #007bff;
+            color: #fff;
             cursor: pointer;
         }
         
@@ -304,16 +304,19 @@
     <div id="popup-container" class="popup">
         <div class="popup-content" style="background-image: url(img/abo.png);">
             <span class="close-btn" onclick="closePopup()">&times;</span>
+
             <h2>Embrace Simplicity</h2>
+
             <!-- <p>Join us today and never miss an update!</p> -->
-            <form>
-                <input type="text" placeholder="Full Name" required style="visibility:hidden;">
-                <input type="email" placeholder="Email Address" required>
-                <input type="phone" placeholder="Phone Number" required style="visibility:hidden;">
-                <input type="password" placeholder="Create Password" required style="visibility:hidden;">
+            <form id="contactForm">
+                <input type="text" placeholder="Full Name" style="visibility:hidden;">
+                <input type="email" placeholder="Email Address" name="email" required>
+                <input type="phone" placeholder="Phone Number" style="visibility:hidden;">
+                <input type="password" placeholder="Create Password" style="visibility:hidden;">
                 <button type="submit">Join our newsletter for Mindful Living Tips!</button>
+
             </form>
-            <p class="skip" onclick="closePopup()">No, thanks</p>
+            <p class="skip" onclick="closePopup()">Later</p>
         </div>
     </div>
 
@@ -677,21 +680,21 @@
         </div>
         <h4>Theme Colors</h4>
 
-        <div class="themes-colors js-theme-colors ">
-            <button type="button " data-js-themes-color="color-1 " class="js-theme-color-item themes-button color-1 ">
-                <i class="fas fa-check "></i>
+        <div class="themes-colors js-theme-colors">
+            <button type="button " data-js-themes-color="color-1" class="js-theme-color-item themes-button color-1">
+                <i class="fas fa-check"></i>
             </button>
-            <button type="button " data-js-themes-color="color-2 " class="js-theme-color-item themes-button color-2 ">
-                <i class=" fas fa-check "></i>
+            <button type="button " data-js-themes-color="color-2" class="js-theme-color-item themes-button color-2">
+                <i class=" fas fa-check"></i>
             </button>
-            <button type="button " data-js-themes-color="color-3 " class="js-theme-color-item themes-button color-3 ">
-                <i class="fas fa-check "></i>
+            <button type="button " data-js-themes-color="color-3" class="js-theme-color-item themes-button color-3">
+                <i class="fas fa-check"></i>
             </button>
-            <button type="button " data-js-themes-color="color-4 " class="js-theme-color-item themes-button color-4 ">
-                <i class="fas fa-check "></i>
+            <button type="button " data-js-themes-color="color-4" class="js-theme-color-item themes-button color-4">
+                <i class="fas fa-check"></i>
             </button>
-            <button type="button " data-js-themes-color="color-5 " class="js-theme-color-item themes-button color-5 ">
-                <i class="fas fa-check "></i>
+            <button type="button " data-js-themes-color="color-5" class="js-theme-color-item themes-button color-5">
+                <i class="fas fa-check"></i>
             </button>
 
             <!-- <button type="button " data-js-themes-color="color-6 " class="js-theme-color-item themes-button color-6 ">
@@ -705,19 +708,19 @@
 
     <!-- autotypying script -->
     <script>
-        const text = "Simplicity & Sustainability. ";
+        const text = "Simplicity & Sustainability.";
         let index = 0;
         const speed = 100; // Typing speed in ms
         const delayBeforeRestart = 1500; // Wait time before restarting
 
         function type() {
             if (index < text.length) {
-                document.getElementById("demo ").textContent += text.charAt(index);
+                document.getElementById("demo").textContent += text.charAt(index);
                 index++;
                 setTimeout(type, speed);
             } else {
                 setTimeout(() => {
-                    document.getElementById("demo ").textContent = " "; // Clear text
+                    document.getElementById("demo").textContent = ""; // Clear text
                     index = 0; // Reset index
                     type(); // Restart typing
                 }, delayBeforeRestart);
@@ -738,12 +741,13 @@
         }
     </script>
 
-    <script src="js/dark.js "></script>
+    <script src="js/dark.js"></script>
+    <script src="js/form.js"></script>
 
-    <script src="js/swiper-bundle.min.js "></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js "></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 </body>
 
