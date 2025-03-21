@@ -65,13 +65,23 @@
         /* Slideshow Container */
         
         .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: auto; /* Adjust height to be auto so it scales with width */
+    aspect-ratio: 16 / 9; /* Optional: maintains a 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+        
+        /* .slideshow-container {
             position: relative;
             width: 100%;
-            max-width: 600px;
-            height: 350px;
+            max-width: 1500px;
+            height: 850px;
             overflow: hidden;
         }
-        
+         */
         .blog-img {
             width: 100%;
             height: 100%;
@@ -197,9 +207,9 @@
             </a>
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-items" id="nav-items">
-                    <li class="item"><a class="nav-link active-link" href="index.html">Home</a></li>
+                    <li class="item"><a class="nav-link " href="index.html">Home</a></li>
                     <li class="item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="item"><a class="nav-link" href="blog.html">Mindful Life</a></li>
+                    <li class="item"><a class="nav-link active-link" href="blog.html">Mindful Life</a></li>
                     <li class="item"><a class="nav-link" href="faq.html">Live It</a></li>
                     <li class="item"><a class="nav-link" href="activities.html">Make an Impact</a></li>
                     <li class="item"><a class="nav-link" href="shop.html"> Explore Collection</a></li>
