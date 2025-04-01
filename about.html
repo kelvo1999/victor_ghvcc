@@ -98,6 +98,48 @@
                 /* Even smaller size */
             }
         }
+        h1, h2, h3 {
+            color: #316131; /* Grinch green */
+            font-size: medium;
+        }
+        p {
+            color: #333;
+            font-size: 15px;
+        }
+        .marquee-container {
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #F6E0BC; /* Optional background */
+    padding: 5px 0;
+    left: 15%;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.marquee img {
+    height: 4cm;
+    transition: transform 0.5s ease-in-out;
+}
+
+.marquee img:hover {
+    transform: scale(1.5); /* Expands image on hover */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+    </style>
     </style>
 </head>
 
@@ -252,63 +294,30 @@
     <div class="main">
         <section class="about section container">
             <!-- <img class="about-img" src="img/abo.png" alt="" style="width:200px; height:250px; border-radius:10%;opacity:100%;align-items: center; position:relative;left:32%;"><br> -->
-            <p>Embrace Intentional Living: Join Us on a Journey Toward Simplicity, Sustainability, and Inner Peace</p>
-
-<p>In a world that's always on the move—filled with noise, distractions, and complexity—intentional living offers a peaceful pause. At GhViƆɔ, we believe that mindfulness, simplicity, and sustainability are the cornerstones of a life well-lived. And we’re inviting you to be a part of this movement, whether you’re already aligned with these values or are just beginning your journey.</p>
-
-<h3>What is Intentional Living?</h3>
-
-<p>Intentional living is the art of slowing down, being present, and making conscious choices. It’s about living with intention—choosing to be aware of what we consume, how we engage with others, and the impact we have on the world around us.</p>
-
-<p>For some, intentional living is already a way of life. For others, it’s the perfect moment to begin. Here’s how it might look in everyday life:</p>
-
-<ul>
-    <li><strong>Simplifying Your Space:</strong> Curating only what brings joy or purpose, leaving behind excess.</li>
-    <li><strong>Choosing Sustainability:</strong> Opting for eco-friendly products and practices that reduce harm to the planet.</li>
-    <li><strong>Being Present:</strong> Focusing on the here and now, whether enjoying a meal, spending time with loved ones, or connecting with nature.</li>
-</ul>
-
-<h3>Simplicity: Less is More</h3>
-
-<p>In a world filled with excess—information, possessions, distractions—simplicity becomes a form of freedom. It's about stripping away what doesn't serve us and creating space for what truly matters.</p>
-
-<p>Living simply doesn’t mean living without. It’s about quality over quantity, intentionality over habit, and mindfulness over haste. It’s the idea that when we make conscious choices, we open the door to clarity and peace.</p>
-
-<p>At GhViƆɔ, we believe in the power of simplicity. If you’ve already embraced it, you know the peace it brings. If you’re ready to make that shift, we’re here to support you—through products that reflect these same values.</p>
-
-<h3>Sustainability: A Shared Responsibility</h3>
-
-<p>Intentional living isn’t just about personal peace—it’s about understanding the impact of our choices on the world around us. Sustainability is at the heart of everything we do. As we become more aware of environmental challenges, we realize that our choices matter.</p>
-
-<p>For some, sustainability is already woven into daily life—through reducing waste, opting for eco-friendly materials, and supporting ethical businesses. For others, it may be the perfect time to begin, whether by switching to reusable products or reducing plastic consumption.</p>
-
-<p>At GhViƆɔ, sustainability isn’t a trend—it’s a promise. From ethical sourcing to reducing packaging waste, we’re dedicated to making a positive impact on the planet. And we want you to join us. Every purchase you make, every sustainable choice you make, contributes to a better world.</p>
-
-<h3>Your Invitation to Take Action</h3>
-
-<p>We’re calling on individuals like you to help champion intentional living. Whether you already embrace these values or are just beginning, there is a place for you in our community.</p>
-
-<p>If you’re aligned with simplicity, sustainability, and mindfulness, we invite you to take action—become part of this movement. Share your journey with others, make intentional choices in your own life, and support businesses that align with your values.</p>
-
-<p>It doesn’t have to be perfect. Every small step you take toward living intentionally is part of a larger, collective shift. Together, we can create a ripple effect of positive change. And we’re here to support you every step of the way.</p>
-
-<h3>For Those Ready to Begin Their Journey</h3>
-
-<p>If you're new to intentional living, start small. Embrace one mindful change—whether it’s reducing plastic, simplifying your wardrobe, or choosing sustainable products. Every mindful choice matters.</p>
-
-<p>At GhViƆɔ, we make it easy to choose wisely. Our products are designed to align with your values—helping you live more simply, sustainably, and intentionally.</p>
-
-<h3>Intentional Living Starts Here</h3>
-
-<p>Intentional living isn’t about perfection. It’s about being present, intentional, and kind—to yourself, others, and the planet. Whether you’re already on the path or just beginning, we’re excited to have you join us.</p>
-
-<p>Together, we can champion simplicity, sustainability, and mindfulness—and create a better, more conscious world.</p>
-
-<h3>Join the Movement</h3>
-
-<p>Take the first step toward intentional living with us. Make intentional choices, live sustainably, and embrace simplicity every day. Together, we’ll create a more mindful world.</p>
-
-            <!-- <h2 class="bearcrumb-title">About Us</h2> -->
+            <h1>Embark on a Journey of Intentional Living: Embrace Simplicity, Sustainability, and Inner Peace</h1>
+    <p>In a world that never stops—bursting with noise, distractions, and endless complexity—intentional living offers a serene escape. At GhViƆɔ, we believe that true fulfillment begins when we embrace mindfulness, simplicity, and sustainability. And now, we invite you to be part of a movement that’s reshaping the way we live—whether you're already aligned with these values or are ready to begin the journey.</p>
+    
+    <h2>What is Intentional Living?</h2>
+    <p>Intentional living is the art of slowing down to truly experience life. It’s about being present, making mindful choices, and curating a life that reflects your deepest values. It’s in the way you simplify your space, the choices you make for the planet, and the moments you cherish with loved ones.</p>
+    
+    <h2>Simplicity: The Freedom of Less</h2>
+    <p>In a world overwhelmed by excess—too much noise, too many things, too many distractions—simplicity becomes a powerful act of liberation. It’s not about having less, but about choosing more of what truly nourishes you. At GhViƆɔ, we believe in the profound peace that simplicity brings—when we strip away the unnecessary, we make room for what matters most. Every piece, every decision, is a step towards clarity and calm.</p>
+    
+    <h2>Sustainability: A Commitment to the Future</h2>
+    <p>Living intentionally isn’t just about your peace of mind—it’s about the impact you leave on the world. Sustainability is woven into every choice we make. It’s about creating harmony with the planet—through ethical sourcing, reducing waste, and supporting practices that honor the Earth. Every mindful decision you make sends a ripple of positive change into the world.</p>
+    
+    <h2>Your Invitation to Step into a New Way of Living</h2>
+    <p>We’re inviting you to join us, to be part of a community that chooses to live with purpose. Whether you’re already aligned with simplicity, sustainability, and mindfulness or are just starting to explore these values, there is a place for you. Every small step counts—each decision, each action, builds toward a world of greater balance and beauty.</p>
+    
+    <h2>For Those Ready to Begin Their Journey</h2>
+    <p>If you’re just beginning, start simple. Choose one mindful change—maybe it's reducing plastic, simplifying your wardrobe, or embracing eco-friendly choices. At GhViƆɔ, we’ve designed products that align with your values, making the shift to intentional living easy, beautiful, and fulfilling.</p>
+    
+    <h2>Intentional Living Starts Here</h2>
+    <p>Living intentionally is not about perfection. It’s about presence, about being aware—in every moment, in every choice, in every relationship. It’s about being kind to yourself, to others, and to the Earth. Together, we can create a world that is simpler, more sustainable, and more mindful.</p>
+    
+    <h2>Join the Movement. Make a Difference.</h2>
+    <p>Take the first step toward a life filled with purpose and peace. Make intentional choices, embrace sustainability, and live with simplicity every day. Let’s co-create a world that radiates mindfulness, clarity, and grace. Together, we will transform our lives and our world—one mindful choice at a time.</p>
+       <!-- <h2 class="bearcrumb-title">About Us</h2> -->
             <!-- <h3 class="bearcrumb-subtitle">Home > <span class="main-color">About Us</span> </h3> -->
             <!-- <div class="about-container grid"> -->
 
@@ -356,7 +365,41 @@
     <!-- ################## End about ################# -->
 
 
-
+    <div class="marquee-container">
+        <div class="marquee">
+            <img src="img/1.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+            <img src="img/5.JPG" alt="Image 5">
+            <img src="img/1.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+            <img src="img/5.JPG" alt="Image 5">
+            <img src="img/1.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+            <img src="img/5.JPG" alt="Image 5">
+            <!-- Repeat images for seamless effect -->
+            <img src="img/1.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+            <img src="img/5.JPG" alt="Image 5">
+            <img src="img/1.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+            <img src="img/5.JPG" alt="Image 5">
+            <img src="img/1.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+            <img src="img/5.JPG" alt="Image 5">
+        </div>
+    </div>
 
 
     <!-- ################## START FOOTER ############ -->
